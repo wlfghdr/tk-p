@@ -68,6 +68,36 @@ Final Score = Base Points × Level Multiplier × Emoji Bonus × Pro Bonus
 3. 2 consecutive timeouts
 4. Player chooses "Quit"
 
+## 📱 Screenshots
+
+### iOS
+
+<div align="center">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.28.46.png" width="200" alt="Start Screen">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.28.37.png" width="200" alt="Playing - Emojis Mode">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.28.56.png" width="200" alt="Playing - Colors Mode">
+</div>
+
+<div align="center">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.29.39.png" width="200" alt="Level Complete">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.29.52.png" width="200" alt="Summary Screen">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.29.31.png" width="200" alt="Settings">
+</div>
+
+### watchOS
+
+<div align="center">
+  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-22 at 23.35.58.png" width="150" alt="Watch - Start Screen">
+  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-22 at 23.36.36.png" width="150" alt="Watch - Playing">
+  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-22 at 23.36.53.png" width="150" alt="Watch - Settings">
+</div>
+
+### Gameplay Video
+
+[📹 Watch Gameplay Demo](Assets/Simulator%20Screen%20Recording%20-%20iPhone%2017%20Pro%20Max%20-%202025-12-22%20at%2023.42.23.mov)
+
+> *Gameplay demonstration showing Colors and Emojis modes on iPhone 17 Pro Max*
+
 ## 📱 User Interface
 
 ### Main Game Screen
@@ -112,21 +142,6 @@ Timekiller supports multiple languages:
 - 🇬🇧 English
 
 The app automatically detects the system language and uses German if available, otherwise defaults to English. All UI text, color names, and emoji descriptions are fully localized.
-
-## 🎯 Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/timekiller.git
-```
-
-2. Open the project in Xcode 15 or later:
-```bash
-cd timekiller
-open Timekiller.xcodeproj
-```
-
-3. Build and run on your device or simulator (iOS 17.0+)
 
 ## 🎮 How to Play
 
