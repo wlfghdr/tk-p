@@ -73,29 +73,79 @@ Final Score = Base Points × Level Multiplier × Emoji Bonus × Pro Bonus
 ### iOS
 
 <div align="center">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.10.59.png" width="200" alt="Start Screen">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.11.38.png" width="200" alt="Playing - Emojis Mode">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.29.png" width="200" alt="Playing - Colors Mode">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 22.39.10.png" width="200" alt="Start Screen"><br>
+        <sub><b>Start Screen</b></sub><br>
+        <sub>Spielmodus wählen & los geht's</sub>
+      </td>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 22.40.09.png" width="200" alt="Playing - Emojis Mode"><br>
+        <sub><b>Emoji-Modus</b></sub><br>
+        <sub>Finde das passende Emoji</sub>
+      </td>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 22.39.28.png" width="200" alt="Playing - Colors Mode"><br>
+        <sub><b>Farben-Modus</b></sub><br>
+        <sub>Text und Farbe müssen übereinstimmen</sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div align="center">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.36.png" width="200" alt="Level Complete">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.52.png" width="200" alt="Summary Screen">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.36.png" width="200" alt="Level Complete"><br>
+        <sub><b>Level Abgeschlossen</b></sub><br>
+        <sub>Erfolg & Punkte-Übersicht</sub>
+      </td>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.29.png" width="200" alt="Summary Screen"><br>
+        <sub><b>Zusammenfassung</b></sub><br>
+        <sub>Detaillierte Statistiken & Highscores</sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ### watchOS
 
 <div align="center">
-  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.09.56.png" width="150" alt="Watch - Start Screen">
-  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.11.png" width="150" alt="Watch - Playing">
-  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.22.png" width="150" alt="Watch - Settings">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.09.56.png" width="150" alt="Watch - Start Screen"><br>
+        <sub><b>Apple Watch - Start</b></sub><br>
+        <sub>Schnellspiel für unterwegs</sub>
+      </td>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.11.png" width="150" alt="Watch - Playing"><br>
+        <sub><b>Apple Watch - Spielen</b></sub><br>
+        <sub>Kompaktes 2×2 Grid</sub>
+      </td>
+      <td align="center">
+        <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.22.png" width="150" alt="Watch - Settings"><br>
+        <sub><b>Apple Watch - Einstellungen</b></sub><br>
+        <sub>Volle Anpassbarkeit</sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
-### Gameplay Video
+### 🎬 Gameplay Video
 
-[📹 Watch Gameplay Demo](Assets/Simulator%20Screen%20Recording%20-%20iPhone%2017%20Pro%20Max%20-%202025-12-23%20at%2013.54.13.mov)
+<div align="center">
+  <a href="Assets/Simulator%20Screen%20Recording%20-%20iPhone%2017%20Pro%20Max%20-%202025-12-23%20at%2013.54.13.mov">
+    <img src="https://img.shields.io/badge/📹_Gameplay_Demo-Jetzt_ansehen-blue?style=for-the-badge" alt="Watch Gameplay Demo">
+  </a>
+</div>
 
-> *Gameplay demonstration showing Colors and Emojis modes on iPhone 17 Pro Max*
+> *🎮 Vollständige Gameplay-Demonstration mit Farben- und Emoji-Modi auf iPhone 17 Pro Max*
+>
+> Zeigt: Start → Spielrunden → Level Complete → Highscores
 
 ## 📱 User Interface
 
