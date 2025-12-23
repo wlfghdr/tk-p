@@ -73,28 +73,27 @@ Final Score = Base Points × Level Multiplier × Emoji Bonus × Pro Bonus
 ### iOS
 
 <div align="center">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.28.46.png" width="200" alt="Start Screen">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.28.37.png" width="200" alt="Playing - Emojis Mode">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.28.56.png" width="200" alt="Playing - Colors Mode">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.10.59.png" width="200" alt="Start Screen">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.11.38.png" width="200" alt="Playing - Emojis Mode">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.29.png" width="200" alt="Playing - Colors Mode">
 </div>
 
 <div align="center">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.29.39.png" width="200" alt="Level Complete">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.29.52.png" width="200" alt="Summary Screen">
-  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-22 at 23.29.31.png" width="200" alt="Settings">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.36.png" width="200" alt="Level Complete">
+  <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.52.png" width="200" alt="Summary Screen">
 </div>
 
 ### watchOS
 
 <div align="center">
-  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-22 at 23.35.58.png" width="150" alt="Watch - Start Screen">
-  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-22 at 23.36.36.png" width="150" alt="Watch - Playing">
-  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-22 at 23.36.53.png" width="150" alt="Watch - Settings">
+  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.09.56.png" width="150" alt="Watch - Start Screen">
+  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.11.png" width="150" alt="Watch - Playing">
+  <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.22.png" width="150" alt="Watch - Settings">
 </div>
 
 ### Gameplay Video
 
-[📹 Watch Gameplay Demo](Assets/Simulator%20Screen%20Recording%20-%20iPhone%2017%20Pro%20Max%20-%202025-12-22%20at%2023.42.23.mov)
+[📹 Watch Gameplay Demo](Assets/Simulator%20Screen%20Recording%20-%20iPhone%2017%20Pro%20Max%20-%202025-12-23%20at%2013.54.13.mov)
 
 > *Gameplay demonstration showing Colors and Emojis modes on iPhone 17 Pro Max*
 
