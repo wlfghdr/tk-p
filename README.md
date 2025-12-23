@@ -176,13 +176,6 @@ Customize your experience:
 - **Details**: View player name, score, max level, and date
 - **Management**: Swipe to delete entries
 
-## 🧪 Testing
-
-The project includes:
-- **Unit Tests**: Score calculation, level progression, timer functionality
-- **UI Tests**: Navigation, button responses, settings persistence
-- **Manual Tests**: Cross-device compatibility, performance, accessibility
-
 ## 🚀 Future Enhancements
 
 Potential features for future versions:
