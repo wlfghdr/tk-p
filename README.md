@@ -1,5 +1,7 @@
 # Timekiller ⚡️
 
+Docs index: [assistant-notes.md](assistant-notes.md) · [CLAUDE.md](CLAUDE.md) · [REQUIREMENTS.md](REQUIREMENTS.md)
+
 A fast-paced, reaction-based puzzle game for iOS where players race against time to identify the correct tile whose text label matches its background.
 
 ![iOS](https://img.shields.io/badge/iOS-17.0%2B-blue)
@@ -9,12 +11,13 @@ A fast-paced, reaction-based puzzle game for iOS where players race against time
 
 ## 🎮 Game Overview
 
-**Timekiller** challenges players to quickly identify matching tiles under time pressure. The game features two distinct modes (Colors and Emojis) and progressively increases difficulty through higher levels.
+**Timekiller** challenges players to quickly identify matching tiles under time pressure. The game features three distinct modes (Colors, Shapes, and Emojis) and progressively increases difficulty through higher levels.
 
 ### Game Objective
 
 Find and tap the tile where the **text content matches the background**:
 - **Colors Mode**: The text "Blue" must be on a blue tile
+- **Shapes Mode**: The text "Circle" must be next to a ● shape
 - **Emojis Mode**: The text "Ghost" must be next to a 👻 emoji
 
 ## ✨ Features
@@ -25,235 +28,51 @@ Find and tap the tile where the **text content matches the background**:
 - **Standard**: 8 colors (Red, Blue, Green, Yellow, Orange, Purple, Brown, Cyan)
 - **Pro Mode**: 16 colors (+ Gray, Indigo, Mint, Turquoise, Pink, Violet, Beige, Silver)
 
+#### 🔷 Shapes Mode
+- **Standard**: 12 shapes (Circle, Square, Triangle, Star, Diamond, Heart, Hexagon, and more)
+- **Pro Mode**: 24 shapes (more variety and challenge)
+
 #### 😀 Emojis Mode
 - **Standard**: 16 emojis (randomly mixed each game)
 - **Pro Mode**: 64 emojis (randomly mixed each game)
 
+### Sound & Haptic Feedback 🔊
+
+Experience immersive gameplay with sound effects and haptic feedback:
+- **Correct Answer**: Success haptic + satisfying sound
+- **Wrong Answer**: Error haptic + negative feedback sound
+- **Time Warning**: Alert haptic when time is running low (< 25%)
+- **Timeout**: Timeout haptic + sound effect
+- **Level Complete**: Celebration haptics + victory sound
+- **Tile Tap**: Gentle haptic feedback on every tap
+
+Both sound and haptics can be toggled independently in settings. Works on both iPhone and Apple Watch!
+
 ### Grid Sizes
 - **2×2**: 4 tiles (faster gameplay, 8s base time)
 - **2×4**: 8 tiles (medium, 12s base time)
-- **3×4**: 12 tiles (more choices, 15s base time)
+- **3×5**: 15 tiles (more choices, 15s base time)
 
 ### Progressive Difficulty
-- Start at configurable levels (1-10)
-- Time limit reduces by **12%** per level (factor: 0.88^(Level-1))
+- Game always starts at Level 1
+- Time limit reduces by **15%** per level (factor: 0.85^(Level-1)) - **increased difficulty!**
 - Each level consists of **6 rounds**
 - Score multiplier increases exponentially with level
+- **Game ends immediately on any wrong selection or timeout** - no second chances!
 
 ### Scoring System
 
 **Base Points** (per round):
 - 2×2 Grid: 10 points
 - 2×4 Grid: 14 points
-- 3×4 Grid: 18 points
+- 3×5 Grid: 18 points
 
 **Multipliers**:
 - **Level Multiplier**: 2^(Level-1)
-- **Emoji Bonus**: 1.3× (30% more points)
+- **Time Multiplier**: Seconds remaining (rounded, minimum 1) ⚡ **NEW!**
+- **Shapes Bonus**: 1.2× (20% more points)
+- **Emoji Bonus**: 1.15× (15% more points) - **reduced from 30%**
 - **Pro Mode Bonus**: 1.5× (50% more points)
 
 **Formula**:
-```
-Final Score = Base Points × Level Multiplier × Emoji Bonus × Pro Bonus
-```
 
-**Point Awards**:
-- ✅ Correct Answer: + Calculated points
-- ❌ Wrong Answer: - Calculated points
-- ⏱️ Timeout: 0 points
-
-### Game Over Conditions
-1. Level score is negative or zero after 6 rounds
-2. 2 consecutive wrong answers
-3. 2 consecutive timeouts
-4. Player chooses "Quit"
-
-## 📱 Screenshots
-
-### iOS
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 22.39.10.png" width="200" alt="Start Screen"><br>
-        <sub><b>Start Screen</b></sub><br>
-        <sub>Spielmodus wählen & los geht's</sub>
-      </td>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 22.40.09.png" width="200" alt="Playing - Emojis Mode"><br>
-        <sub><b>Emoji-Modus</b></sub><br>
-        <sub>Finde das passende Emoji</sub>
-      </td>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 22.39.28.png" width="200" alt="Playing - Colors Mode"><br>
-        <sub><b>Farben-Modus</b></sub><br>
-        <sub>Text und Farbe müssen übereinstimmen</sub>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.36.png" width="200" alt="Level Complete"><br>
-        <sub><b>Level Abgeschlossen</b></sub><br>
-        <sub>Erfolg & Punkte-Übersicht</sub>
-      </td>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - iPhone 16e - 2025-12-23 at 16.12.29.png" width="200" alt="Summary Screen"><br>
-        <sub><b>Zusammenfassung</b></sub><br>
-        <sub>Detaillierte Statistiken & Highscores</sub>
-      </td>
-    </tr>
-  </table>
-</div>
-
-### watchOS
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.09.56.png" width="150" alt="Watch - Start Screen"><br>
-        <sub><b>Apple Watch - Start</b></sub><br>
-        <sub>Schnellspiel für unterwegs</sub>
-      </td>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.11.png" width="150" alt="Watch - Playing"><br>
-        <sub><b>Apple Watch - Spielen</b></sub><br>
-        <sub>Kompaktes 2×2 Grid</sub>
-      </td>
-      <td align="center">
-        <img src="Assets/Simulator Screenshot - Apple Watch SE 3 (40mm) - 2025-12-23 at 16.10.22.png" width="150" alt="Watch - Settings"><br>
-        <sub><b>Apple Watch - Einstellungen</b></sub><br>
-        <sub>Volle Anpassbarkeit</sub>
-      </td>
-    </tr>
-  </table>
-</div>
-
-### 🎬 Gameplay Video
-
-<div align="center">
-  <a href="Assets/Simulator%20Screen%20Recording%20-%20iPhone%2017%20Pro%20Max%20-%202025-12-23%20at%2013.54.13.mov">
-    <img src="https://img.shields.io/badge/📹_Gameplay_Demo-Jetzt_ansehen-blue?style=for-the-badge" alt="Watch Gameplay Demo">
-  </a>
-</div>
-
-> *🎮 Vollständige Gameplay-Demonstration mit Farben- und Emoji-Modi auf iPhone 17 Pro Max*
->
-> Zeigt: Start → Spielrunden → Level Complete → Highscores
-
-## 📱 User Interface
-
-### Main Game Screen
-- **Header**: Level, round progress, scores, timer, grid info
-- **Game Grid**: Dynamic tile layout based on settings
-- **Progress Bar**: Visual time indicator (green/red)
-- **Score Overlay**: Animated score feedback after each answer
-
-### Additional Screens
-- **Start Screen**: Mode selection, example grid, instructions
-- **Pause Screen**: Resume or quit options
-- **Level Complete**: Celebration screen with continue/quit options
-- **Summary Screen**: Game over stats, score breakdown, top 3 preview
-- **Settings**: Comprehensive game configuration
-- **Highscores**: Top 10 scores with swipe-to-delete
-
-## 🛠 Technical Details
-
-### Requirements
-- **Platform**: iOS 17.0+
-- **Language**: Swift 5.9+
-- **Framework**: SwiftUI
-- **State Management**: Observation Framework (`@Observable`)
-- **Persistence**: UserDefaults with JSON encoding
-
-### Architecture
-- Pure SwiftUI implementation
-- Modern Swift concurrency patterns
-- Reactive state management
-- Localized for German and English
-
-### Key Technologies
-- **SwiftUI**: Complete UI implementation
-- **Observation Framework**: Modern state management
-- **Foundation**: Core functionality
-- **UserDefaults**: Data persistence
-
-## 🌍 Localization
-
-Timekiller supports multiple languages:
-- 🇩🇪 German (Deutsch)
-- 🇬🇧 English
-
-The app automatically detects the system language and uses German if available, otherwise defaults to English. All UI text, color names, and emoji descriptions are fully localized.
-
-## 🎮 How to Play
-
-1. **Choose Your Mode**: Select Colors or Emojis
-2. **Pick Grid Size**: Choose from 2×2, 2×4, or 3×4
-3. **Optional**: Enable Pro Mode for extra challenge
-4. **Start Playing**: Tap the correct tile before time runs out
-5. **Progress**: Complete 6 rounds to advance to the next level
-6. **Compete**: Beat your high score and climb the leaderboard
-
-### Tips
-- 💡 Focus on finding the match, not reading everything
-- ⚡️ Speed matters, but accuracy matters more (wrong answers deduct points!)
-- 🎯 Start with 2×2 grid to learn the mechanics
-- 🏆 Pro Mode doubles the difficulty but also doubles the rewards
-
-## 📊 Settings
-
-Customize your experience:
-- **Game Mode**: Colors or Emojis
-- **Grid Size**: 2×2, 2×4, or 3×4
-- **Difficulty**: Pro Mode toggle
-- **Start Level**: Begin at levels 1-10
-- **Player Name**: Personalize your highscore entries
-- **Theme**: System, Light, or Dark
-- **Language**: German or English
-
-## 🏆 Highscores
-
-- **Top 10**: Only the best 10 scores are saved
-- **Persistent**: Scores are saved between sessions
-- **Details**: View player name, score, max level, and date
-- **Management**: Swipe to delete entries
-
-## 🚀 Future Enhancements
-
-Potential features for future versions:
-- 🎵 Sound effects and haptic feedback
-- 🏅 Achievement system
-- 📊 Detailed statistics and analytics
-- 🌐 Global leaderboards
-- 🎨 Custom color themes
-- 🎓 Tutorial mode
-- ♾️ Endless mode
-- 👥 Multiplayer battles
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👨‍💻 Author
-
-**Wolfgang Heider**
-
-## 🙏 Acknowledgments
-
-- Built with SwiftUI and modern Swift features
-- Designed for iPhone and iPad
-- Optimized for iOS 17.0+
-
----
-
-**Version**: 1.0  
-**Date**: December 22, 2024  
-
-Enjoy playing Timekiller! ⚡️🎮
