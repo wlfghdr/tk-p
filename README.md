@@ -47,7 +47,7 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
   - 6 rounds per level
   - Time reduces by 15% each level – can you keep up?
   - Exponential score multiplier for massive points
-  - One mistake = Game Over! Stay focused!
+  - One mistake allowed per level – second mistake ends the game!
 
 - 🎮 **Player Features**
   - 🏅 15 unlockable achievements
@@ -76,7 +76,7 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
 6. **Level Up**: Complete 6 rounds to advance
 7. **Go Pro**: Unlock Pro mode for the ultimate challenge!
 
-**One mistake ends the game - stay focused!** ⚡️
+**You get one mistake per level - the second mistake ends the game!** ⚡️
 
 ### 🏅 Achievement System
 
@@ -109,7 +109,7 @@ Each achievement brings you closer to becoming a true Timekiller champion! 🏆
 ### 💡 Tips & Strategies
 
 - 🎯 **Focus on the match**, not reading everything – train your pattern recognition!
-- ⚡ **Speed matters**, but accuracy is everything! One wrong tap and you're out.
+- ⚡ **Speed matters**, but accuracy is everything! Two wrong taps and you're out.
 - 🔰 **Start with 2×2 grid** to learn the mechanics before tackling bigger challenges
 - 🔥 **Pro mode** is significantly harder but rewards you with 50% more points
 - ⏱️ **Every second counts** – the faster you answer, the higher your score!
@@ -193,7 +193,7 @@ Perfekt für kurze Spielsessions, Gehirntraining oder zum Wetteifern mit Freunde
   - 6 Runden pro Level
   - Zeit reduziert sich um 15% pro Level – kannst du mithalten?
   - Exponentieller Score-Multiplikator für massive Punkte
-  - Ein Fehler = Game Over! Bleib fokussiert!
+  - Ein Fehler pro Level erlaubt – der zweite Fehler beendet das Spiel!
 
 - 🎮 **Spieler-Features**
   - 🏅 15 freischaltbare Errungenschaften
@@ -222,7 +222,7 @@ Perfekt für kurze Spielsessions, Gehirntraining oder zum Wetteifern mit Freunde
 6. **Level aufsteigen**: Schließe 6 Runden ab zum Aufsteigen
 7. **Pro werden**: Schalte den Pro-Modus für die ultimative Herausforderung frei!
 
-**Ein Fehler beendet das Spiel - bleib fokussiert!** ⚡️
+**Du hast einen Fehler pro Level frei - der zweite Fehler beendet das Spiel!** ⚡️
 
 ### 🏅 Errungenschaften-System
 
@@ -255,7 +255,7 @@ Jede Errungenschaft bringt dich näher daran, ein wahrer Timekiller-Champion zu 
 ### 💡 Tipps & Strategien
 
 - 🎯 **Konzentriere dich auf die Übereinstimmung**, nicht aufs Lesen von allem – trainiere deine Mustererkennung!
-- ⚡ **Geschwindigkeit ist wichtig**, aber Genauigkeit ist alles! Ein falscher Tipp und du bist raus.
+- ⚡ **Geschwindigkeit ist wichtig**, aber Genauigkeit ist alles! Zwei falsche Tipps und du bist raus.
 - 🔰 **Starte mit 2×2 Grid**, um die Mechanik zu lernen, bevor du größere Herausforderungen angehst
 - 🔥 **Pro-Modus** ist deutlich schwerer, belohnt dich aber mit 50% mehr Punkten
 - ⏱️ **Jede Sekunde zählt** – je schneller du antwortest, desto höher dein Score!
