@@ -22,42 +22,48 @@
 
 ### 📖 About
 
-Timekiller is an addictive reaction puzzle game where you must identify the correct tile before time runs out! Find the tile where the **text label matches the background** - but watch out, it gets faster with every level!
+**How fast can you think?** 🧠⚡️
+
+Timekiller is an addictive reaction puzzle game that challenges your brain and reflexes! Your mission: find the tile where the **text label matches the background** before time runs out. 
+
+Sounds simple? Wait until the clock starts ticking! With each level, you'll have less time and more tiles to choose from. One mistake and it's game over!
+
+Perfect for quick gaming sessions, brain training, or competitive play with friends. No ads, no in-app purchases, no internet required – just pure puzzle fun!
 
 ### ✨ Features
 
-- 🎨 **Three Game Modes**
-  - **Colors**: Match color names with backgrounds (8 standard / 16 pro)
-  - **Shapes**: Match shape names with symbols (12 standard / 24 pro)
-  - **Emojis**: Match emoji names with icons (16 standard / 64 pro)
+- 🎨 **Three Addictive Game Modes**
+  - **Colors**: Match color names with backgrounds (8 colors / 16 in Pro mode)
+  - **Shapes**: Match shape names with symbols (12 shapes / 24 in Pro mode)
+  - **Emojis**: Match emoji names with icons (16 emojis / 64 in Pro mode!)
   
-- 📊 **Three Grid Sizes**
-  - 2×2: Fast and intense (4 tiles, 8s base time)
-  - 2×4: Medium difficulty (8 tiles, 12s base time)
-  - 3×5: Maximum challenge (15 tiles, 15s base time)
+- 📊 **Three Challenge Levels**
+  - **2×2 Grid**: Fast and intense (4 tiles, 8s starting time)
+  - **2×4 Grid**: Medium difficulty (8 tiles, 12s starting time)
+  - **3×5 Grid**: Maximum challenge (15 tiles, 15s starting time)
 
-- 🏆 **Progressive Challenge**
-  - Start at Level 1
+- 🏆 **Progressive Difficulty**
+  - Start at Level 1 and see how far you can go!
   - 6 rounds per level
-  - Time reduces by 15% each level
-  - Exponential score multiplier
-  - One mistake = Game Over!
+  - Time reduces by 15% each level – can you keep up?
+  - Exponential score multiplier for massive points
+  - One mistake = Game Over! Stay focused!
 
-- 🎮 **Advanced Features**
-  - 15 unlockable achievements
-  - Pro mode with more items (1.5× points)
-  - Highscore system (Top 10)
-  - Sound & haptic feedback
-  - Dark & Light mode
-  - Full localization (English & German)
-  - Apple Watch companion app
+- 🎮 **Player Features**
+  - 🏅 15 unlockable achievements
+  - 🔥 Pro mode with expanded content (50% more points!)
+  - 📈 Highscore leaderboard (Top 10)
+  - 🔊 Sound effects & haptic feedback
+  - 🌗 Beautiful Dark & Light themes
+  - 🌍 Fully localized in English & German
+  - ⌚ Apple Watch companion app included
 
-- 🎯 **Scoring System**
-  - Base points depend on grid size
-  - Multiplied by level (2^(Level-1))
-  - Multiplied by time remaining
-  - Bonus for shapes (+20%) and emojis (+15%)
-  - Pro mode bonus (+50%)
+- 🎯 **Smart Scoring System**
+  - Base points based on grid difficulty
+  - Level multiplier increases exponentially
+  - Speed bonus for fast answers
+  - Mode bonuses: Shapes (+20%), Emojis (+15%), Pro Mode (+50%)
+  - Every second counts towards your final score!
 
 
 ### 🎮 How to Play
@@ -74,67 +80,87 @@ Timekiller is an addictive reaction puzzle game where you must identify the corr
 
 ### 🏅 Achievement System
 
-Unlock 15 unique achievements by completing challenges:
+Unlock 15 exciting achievements as you master the game:
 
+#### 🎨 Color Master Path
 - **🐻‍❄️ Color Cub**: Complete Level 5 on 2×2 Colors
 - **🪢 Rectangle Wrangler**: Complete Level 5 on 2×4 Colors
 - **🧙‍♂️ Grid Guru**: Complete Level 5 on 3×5 Colors
-- **🧠🎨 Palette Mastermind**: Complete all Color grids → Unlocks Shapes mode
+- **🧠🎨 Palette Mastermind**: Master all Color grids → **Unlocks Shapes Mode!**
+
+#### 🔷 Shape Master Path
 - **🔷 Shape Shifter**: Complete Level 5 on 2×2 Shapes
 - **⬡ Polygon Pro**: Complete Level 5 on 2×4 Shapes
 - **📐 Geometry Genius**: Complete Level 5 on 3×5 Shapes
-- **🏆 Shape Master**: Complete all Shapes grids → Unlocks Emoji mode
+- **🏆 Shape Master**: Master all Shape grids → **Unlocks Emoji Mode!**
+
+#### 😄 Emoji Master Path
 - **🙂⬜ Square Smiler**: Complete Level 5 on 2×2 Emojis
 - **🚂😄 Emoji Express**: Complete Level 5 on 2×4 Emojis
 - **👑😎 Smiley Supreme**: Complete Level 5 on 3×5 Emojis
-- **🦸‍♂️✨ Pro Unlocked Hero**: Complete all Emoji grids → Unlocks Pro mode
-- **🔥 Pro Mode Masters**: Complete Level 5 on each grid in Pro mode
-- **⏳👑 Ultimate Master**: Complete Level 5 on ALL grids in ALL modes
+- **🦸‍♂️✨ Pro Unlocked Hero**: Master all Emoji grids → **Unlocks Pro Mode!**
+
+#### 🔥 Ultimate Challenges
+- **🔥 Pro Mode Master**: Complete Level 5 on every grid in Pro mode
+- **⏳👑 Ultimate Master**: Complete Level 5 on ALL grids in ALL modes – the ultimate bragging rights!
+
+Each achievement brings you closer to becoming a true Timekiller champion! 🏆
 
 ### 💡 Tips & Strategies
 
-- **Focus on the match**, not reading everything
-- **Speed is important**, but accuracy matters more!
-- Start with **2×2 grid** to learn the mechanics
-- **Pro mode** is harder but gives significantly more points
-- Use the **time multiplier** to your advantage - answer quickly!
-- Each emoji game has **different random emojis** for variety
+- 🎯 **Focus on the match**, not reading everything – train your pattern recognition!
+- ⚡ **Speed matters**, but accuracy is everything! One wrong tap and you're out.
+- 🔰 **Start with 2×2 grid** to learn the mechanics before tackling bigger challenges
+- 🔥 **Pro mode** is significantly harder but rewards you with 50% more points
+- ⏱️ **Every second counts** – the faster you answer, the higher your score!
+- 🎲 **Each emoji game is unique** with different random emojis for endless variety
+
+### ❤️ Why You'll Love Timekiller
+
+✅ **Perfect for any moment** – Quick rounds fit perfectly into short breaks  
+✅ **Easy to learn, hard to master** – Simple concept with deep challenge  
+✅ **Truly competitive** – Compare scores with friends and family  
+✅ **No interruptions** – No ads, no paywalls, no spam  
+✅ **Works everywhere** – Play on your phone, tablet, or watch  
+✅ **Brain training** – Improve your reaction time and pattern recognition  
+✅ **Fresh every time** – Random tile arrangements and emoji sets keep it exciting
 
 
-### 🛠 Technical Details
+### 🛠 What You Get
 
-- **Platform**: iOS 17.0+ / watchOS 10.0+
-- **Framework**: SwiftUI
-- **Architecture**: MVVM with Observation
-- **Storage**: UserDefaults (local persistence)
-- **Languages**: English, German
+- 📱 **Universal App**: One download, works on iPhone, iPad, and Apple Watch
+- 🆓 **Completely Free**: No ads, no in-app purchases, no subscriptions
+- 🔒 **Privacy First**: No data collection, no tracking, no internet required
+- 🎨 **Beautiful Design**: Modern SwiftUI interface with smooth animations
+- 🌍 **Fully Localized**: Available in English and German
+- ♿ **Accessible**: Designed to work with VoiceOver and accessibility features
+- 💾 **Your Progress, Your Device**: All highscores and settings stay on your device
 
-### 📱 Compatibility
+### 📱 Requirements
 
-- iPhone (iOS 17.0+)
-- iPad (optimized)
-- Apple Watch (companion app)
-- All screen sizes supported
-- Dark & Light mode
+- **iPhone or iPad**: iOS 17.0 or later
+- **Apple Watch**: watchOS 10.0 or later (companion app)
+- Compatible with all screen sizes
+- Works offline – no internet connection needed!
 
-### 👤 Author
+### 👤 About the Developer
 
-**Wolfgang Heider**
-- GitHub: [@wlfghdr](https://github.com/wlfghdr)
+**Wolfgang Heider** – Independent iOS developer passionate about creating fun, accessible games.
 
-### 🎯 Roadmap
+- 💻 GitHub: [@wlfghdr](https://github.com/wlfghdr)
+- 📧 Support: Open an issue on GitHub for help or suggestions
+- ⭐ **Love the game?** Rate it on the App Store and share with friends!
 
-- [x] Color mode
-- [x] Shape mode  
-- [x] Emoji mode
-- [x] Achievement system
-- [x] Pro mode
-- [x] Apple Watch app
-- [x] Sound & haptic feedback
-- [ ] Additional game modes (numbers, letters)
-- [ ] Endless mode
-- [ ] Online leaderboards
-- [ ] Multiplayer
+### 🎯 Coming Soon
+
+We're constantly working to make Timekiller even better! Here's what's on the horizon:
+
+- 🔢 **Additional game modes** (numbers, letters, and more)
+- ♾️ **Endless mode** for non-stop action
+- 🌐 **Online leaderboards** to compete globally
+- 👥 **Multiplayer** challenges with friends
+
+Have a feature request? Let us know on GitHub!
 
 ---
 
@@ -142,42 +168,48 @@ Unlock 15 unique achievements by completing challenges:
 
 ### 📖 Über die App
 
-Timekiller ist ein süchtig machendes Reaktions-Puzzle, bei dem du die richtige Kachel identifizieren musst, bevor die Zeit abläuft! Finde die Kachel, bei der das **Textlabel mit dem Hintergrund übereinstimmt** - aber Vorsicht, mit jedem Level wird es schneller!
+**Wie schnell kannst du denken?** 🧠⚡️
+
+Timekiller ist ein süchtig machendes Reaktions-Puzzle, das dein Gehirn und deine Reflexe herausfordert! Deine Mission: Finde die Kachel, bei der das **Textlabel mit dem Hintergrund übereinstimmt**, bevor die Zeit abläuft.
+
+Klingt einfach? Warte, bis die Uhr zu ticken beginnt! Mit jedem Level hast du weniger Zeit und mehr Kacheln zur Auswahl. Ein Fehler und das Spiel ist vorbei!
+
+Perfekt für kurze Spielsessions, Gehirntraining oder zum Wetteifern mit Freunden. Keine Werbung, keine In-App-Käufe, kein Internet nötig – nur pures Puzzle-Vergnügen!
 
 ### ✨ Features
 
-- 🎨 **Drei Spielmodi**
-  - **Farben**: Farbnamen mit Hintergründen abgleichen (8 Standard / 16 Pro)
-  - **Formen**: Formennamen mit Symbolen abgleichen (12 Standard / 24 Pro)
-  - **Emojis**: Emoji-Namen mit Icons abgleichen (16 Standard / 64 Pro)
+- 🎨 **Drei süchtig machende Spielmodi**
+  - **Farben**: Farbnamen mit Hintergründen abgleichen (8 Farben / 16 im Pro-Modus)
+  - **Formen**: Formennamen mit Symbolen abgleichen (12 Formen / 24 im Pro-Modus)
+  - **Emojis**: Emoji-Namen mit Icons abgleichen (16 Emojis / 64 im Pro-Modus!)
   
-- 📊 **Drei Grid-Größen**
-  - 2×2: Schnell und intensiv (4 Kacheln, 8s Basis-Zeit)
-  - 2×4: Mittlere Schwierigkeit (8 Kacheln, 12s Basis-Zeit)
-  - 3×5: Maximale Herausforderung (15 Kacheln, 15s Basis-Zeit)
+- 📊 **Drei Schwierigkeitsstufen**
+  - **2×2 Grid**: Schnell und intensiv (4 Kacheln, 8s Startzeit)
+  - **2×4 Grid**: Mittlere Schwierigkeit (8 Kacheln, 12s Startzeit)
+  - **3×5 Grid**: Maximale Herausforderung (15 Kacheln, 15s Startzeit)
 
-- 🏆 **Progressive Herausforderung**
-  - Start bei Level 1
+- 🏆 **Progressive Schwierigkeit**
+  - Starte bei Level 1 und schau, wie weit du kommst!
   - 6 Runden pro Level
-  - Zeit reduziert sich um 15% pro Level
-  - Exponentieller Score-Multiplikator
-  - Ein Fehler = Game Over!
+  - Zeit reduziert sich um 15% pro Level – kannst du mithalten?
+  - Exponentieller Score-Multiplikator für massive Punkte
+  - Ein Fehler = Game Over! Bleib fokussiert!
 
-- 🎮 **Erweiterte Features**
-  - 15 freischaltbare Errungenschaften
-  - Pro-Modus mit mehr Items (1,5× Punkte)
-  - Highscore-System (Top 10)
-  - Sound & Haptik-Feedback
-  - Dark & Light Mode
-  - Vollständige Lokalisierung (Deutsch & Englisch)
-  - Apple Watch Begleit-App
+- 🎮 **Spieler-Features**
+  - 🏅 15 freischaltbare Errungenschaften
+  - 🔥 Pro-Modus mit erweiterten Inhalten (50% mehr Punkte!)
+  - 📈 Highscore-Bestenliste (Top 10)
+  - 🔊 Soundeffekte & Haptik-Feedback
+  - 🌗 Wunderschöne Dark & Light Themes
+  - 🌍 Vollständig lokalisiert in Deutsch & Englisch
+  - ⌚ Apple Watch Begleit-App inklusive
 
-- 🎯 **Punktesystem**
-  - Basispunkte abhängig von Grid-Größe
-  - Multipliziert mit Level (2^(Level-1))
-  - Multipliziert mit verbleibender Zeit
-  - Bonus für Formen (+20%) und Emojis (+15%)
-  - Pro-Modus Bonus (+50%)
+- 🎯 **Intelligentes Punktesystem**
+  - Basispunkte basierend auf Grid-Schwierigkeit
+  - Level-Multiplikator steigt exponentiell
+  - Geschwindigkeitsbonus für schnelle Antworten
+  - Modus-Boni: Formen (+20%), Emojis (+15%), Pro-Modus (+50%)
+  - Jede Sekunde zählt für deinen Endscore!
 
 
 ### 🎮 Spielanleitung
@@ -194,68 +226,88 @@ Timekiller ist ein süchtig machendes Reaktions-Puzzle, bei dem du die richtige 
 
 ### 🏅 Errungenschaften-System
 
-Schalte 15 einzigartige Errungenschaften frei, indem du Herausforderungen meisterst:
+Schalte 15 spannende Errungenschaften frei, während du das Spiel meisterst:
 
+#### 🎨 Farben-Meister-Pfad
 - **🐻‍❄️ Farb-Bär**: Schließe Level 5 auf 2×2 Farben ab
 - **🪢 Rechteck-Ranger**: Schließe Level 5 auf 2×4 Farben ab
 - **🧙‍♂️ Grid-Guru**: Schließe Level 5 auf 3×5 Farben ab
-- **🧠🎨 Paletten-Meister**: Schließe alle Farben-Grids ab → Schaltet Formen-Modus frei
+- **🧠🎨 Paletten-Meister**: Meistere alle Farben-Grids → **Schaltet Formen-Modus frei!**
+
+#### 🔷 Formen-Meister-Pfad
 - **🔷 Formen-Wandler**: Schließe Level 5 auf 2×2 Formen ab
 - **⬡ Polygon-Profi**: Schließe Level 5 auf 2×4 Formen ab
 - **📐 Geometrie-Genie**: Schließe Level 5 auf 3×5 Formen ab
-- **🏆 Formen-Meister**: Schließe alle Formen-Grids ab → Schaltet Emoji-Modus frei
+- **🏆 Formen-Meister**: Meistere alle Formen-Grids → **Schaltet Emoji-Modus frei!**
+
+#### 😄 Emoji-Meister-Pfad
 - **🙂⬜ Quadrat-Smiler**: Schließe Level 5 auf 2×2 Emojis ab
 - **🚂😄 Emoji-Express**: Schließe Level 5 auf 2×4 Emojis ab
 - **👑😎 Smiley-Supreme**: Schließe Level 5 auf 3×5 Emojis ab
-- **🦸‍♂️✨ Pro-Freischalt-Held**: Schließe alle Emoji-Grids ab → Schaltet Pro-Modus frei
+- **🦸‍♂️✨ Pro-Freischalt-Held**: Meistere alle Emoji-Grids → **Schaltet Pro-Modus frei!**
+
+#### 🔥 Ultimative Herausforderungen
 - **🔥 Pro-Modus-Meister**: Schließe Level 5 auf jedem Grid im Pro-Modus ab
-- **⏳👑 Ultimativer Meister**: Schließe Level 5 auf ALLEN Grids in ALLEN Modi ab
+- **⏳👑 Ultimativer Meister**: Schließe Level 5 auf ALLEN Grids in ALLEN Modi ab – die ultimativen Bragging Rights!
+
+Jede Errungenschaft bringt dich näher daran, ein wahrer Timekiller-Champion zu werden! 🏆
 
 ### 💡 Tipps & Strategien
 
-- **Konzentriere dich auf die Übereinstimmung**, nicht aufs Lesen von allem
-- **Geschwindigkeit ist wichtig**, aber Genauigkeit noch mehr!
-- Starte mit dem **2×2 Grid**, um die Mechanik zu lernen
-- **Pro-Modus** ist schwieriger, gibt aber deutlich mehr Punkte
-- Nutze den **Zeit-Multiplikator** zu deinem Vorteil - antworte schnell!
-- Jedes Emoji-Spiel hat **verschiedene zufällige Emojis** für Abwechslung
+- 🎯 **Konzentriere dich auf die Übereinstimmung**, nicht aufs Lesen von allem – trainiere deine Mustererkennung!
+- ⚡ **Geschwindigkeit ist wichtig**, aber Genauigkeit ist alles! Ein falscher Tipp und du bist raus.
+- 🔰 **Starte mit 2×2 Grid**, um die Mechanik zu lernen, bevor du größere Herausforderungen angehst
+- 🔥 **Pro-Modus** ist deutlich schwerer, belohnt dich aber mit 50% mehr Punkten
+- ⏱️ **Jede Sekunde zählt** – je schneller du antwortest, desto höher dein Score!
+- 🎲 **Jedes Emoji-Spiel ist einzigartig** mit verschiedenen zufälligen Emojis für endlose Abwechslung
+
+### ❤️ Warum du Timekiller lieben wirst
+
+✅ **Perfekt für jeden Moment** – Schnelle Runden passen perfekt in kurze Pausen  
+✅ **Leicht zu lernen, schwer zu meistern** – Einfaches Konzept mit tiefgehender Herausforderung  
+✅ **Echt wettbewerbsfähig** – Vergleiche Scores mit Freunden und Familie  
+✅ **Keine Unterbrechungen** – Keine Werbung, keine Paywalls, kein Spam  
+✅ **Funktioniert überall** – Spiele auf deinem Handy, Tablet oder deiner Uhr  
+✅ **Gehirntraining** – Verbessere deine Reaktionszeit und Mustererkennung  
+✅ **Immer frisch** – Zufällige Kachel-Anordnungen und Emoji-Sets halten es spannend
 
 
-### 🛠 Technische Details
+### 🛠 Was du bekommst
 
-- **Plattform**: iOS 17.0+ / watchOS 10.0+
-- **Framework**: SwiftUI
-- **Architektur**: MVVM mit Observation
-- **Speicherung**: UserDefaults (lokale Persistenz)
-- **Sprachen**: Deutsch, Englisch
+- 📱 **Universal-App**: Ein Download, funktioniert auf iPhone, iPad und Apple Watch
+- 🆓 **Komplett kostenlos**: Keine Werbung, keine In-App-Käufe, keine Abos
+- 🔒 **Privatsphäre zuerst**: Keine Datenerfassung, kein Tracking, kein Internet nötig
+- 🎨 **Schönes Design**: Moderne SwiftUI-Oberfläche mit flüssigen Animationen
+- 🌍 **Vollständig lokalisiert**: Verfügbar in Deutsch und Englisch
+- ♿ **Barrierefrei**: Entwickelt für VoiceOver und Bedienungshilfen
+- 💾 **Dein Fortschritt, dein Gerät**: Alle Highscores und Einstellungen bleiben auf deinem Gerät
 
-### 📱 Kompatibilität
+### 📱 Anforderungen
 
-- iPhone (iOS 17.0+)
-- iPad (optimiert)
-- Apple Watch (Begleit-App)
-- Alle Bildschirmgrößen unterstützt
-- Dark & Light Mode
+- **iPhone oder iPad**: iOS 17.0 oder neuer
+- **Apple Watch**: watchOS 10.0 oder neuer (Begleit-App)
+- Kompatibel mit allen Bildschirmgrößen
+- Funktioniert offline – keine Internetverbindung nötig!
 
 
-### 👤 Autor
+### 👤 Über den Entwickler
 
-**Wolfgang Heider**
-- GitHub: [@wlfghdr](https://github.com/wlfghdr)
+**Wolfgang Heider** – Unabhängiger iOS-Entwickler mit Leidenschaft für unterhaltsame, zugängliche Spiele.
 
-### 🎯 Roadmap
+- 💻 GitHub: [@wlfghdr](https://github.com/wlfghdr)
+- 📧 Support: Öffne ein Issue auf GitHub für Hilfe oder Vorschläge
+- ⭐ **Gefällt dir das Spiel?** Bewerte es im App Store und teile es mit Freunden!
 
-- [x] Farben-Modus
-- [x] Formen-Modus  
-- [x] Emoji-Modus
-- [x] Errungenschaften-System
-- [x] Pro-Modus
-- [x] Apple Watch App
-- [x] Sound & Haptik-Feedback
-- [ ] Zusätzliche Spielmodi (Zahlen, Buchstaben)
-- [ ] Endlos-Modus
-- [ ] Online-Bestenlisten
-- [ ] Multiplayer
+### 🎯 Demnächst
+
+Wir arbeiten ständig daran, Timekiller noch besser zu machen! Das steht auf dem Plan:
+
+- 🔢 **Zusätzliche Spielmodi** (Zahlen, Buchstaben und mehr)
+- ♾️ **Endlos-Modus** für Non-Stop-Action
+- 🌐 **Online-Bestenlisten** für globalen Wettbewerb
+- 👥 **Multiplayer**-Herausforderungen mit Freunden
+
+Hast du einen Feature-Wunsch? Lass es uns auf GitHub wissen!
 
 ---
 
