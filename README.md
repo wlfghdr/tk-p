@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![App Icon](assets/icon-placeholder.png)
+![App Icon](assets/icon.png)
 
 **Fast-paced puzzle game that tests your reflexes and brain!**
 
