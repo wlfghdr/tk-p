@@ -5,206 +5,453 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Timekiller</title>
     <style>
+        :root {
+            --primary-color: #007AFF;
+            --success-color: #34C759;
+            --background-color: #F2F2F7;
+            --card-background: #FFFFFF;
+            --text-primary: #000000;
+            --text-secondary: #8E8E93;
+            --border-color: #C6C6C8;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #000000;
+                --card-background: #1C1C1E;
+                --text-primary: #FFFFFF;
+                --text-secondary: #8E8E93;
+                --border-color: #38383A;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
             line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #fff;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        h1 { 
-            color: #FF6B00; 
-            text-align: center;
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
             margin-bottom: 10px;
+            color: var(--primary-color);
         }
-        h2 { 
-            color: #555; 
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
             margin-top: 30px;
-            border-bottom: 2px solid #FF6B00;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
         }
+        
         h3 {
-            color: #666;
+            font-size: 20px;
+            font-weight: 600;
             margin-top: 25px;
+            margin-bottom: 12px;
         }
-        h4 {
-            color: #777;
-            margin-top: 20px;
+        
+        p {
+            margin-bottom: 15px;
+            color: var(--text-primary);
         }
-        .lang-section { 
-            margin-bottom: 50px; 
-            padding-bottom: 50px; 
-            border-bottom: 3px solid #eee; 
+        
+        .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
         }
-        .lang-section:last-of-type {
-            border-bottom: none;
-        }
-        .highlight { 
-            background: #fff3e0; 
-            padding: 15px; 
+        
+        .highlight {
+            background-color: rgba(0, 122, 255, 0.1);
+            padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #FF6B00;
             margin: 20px 0;
+            border-left: 4px solid var(--primary-color);
         }
-        .meta {
-            text-align: center;
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 40px;
+        
+        .highlight strong {
+            color: var(--primary-color);
+            font-size: 18px;
         }
+        
         ul {
-            line-height: 1.8;
+            list-style: none;
+            margin: 15px 0;
+            padding-left: 0;
         }
-        .contact {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
+        
+        ul li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
         }
-        .footer {
-            text-align: center;
-            color: #999;
-            font-size: 0.9em;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #eee;
+        
+        ul li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            font-size: 18px;
         }
+        
+        ul.negative li::before {
+            content: '❌';
+        }
+        
+        ul.check li::before {
+            content: '✓';
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--border-color), transparent);
+            margin: 40px 0;
+        }
+        
         a {
-            color: #FF6B00;
+            color: var(--primary-color);
             text-decoration: none;
         }
+        
         a:hover {
             text-decoration: underline;
         }
-        strong {
-            color: #FF6B00;
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 5px;
+            background-color: rgba(0, 122, 255, 0.1);
+            color: var(--primary-color);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid var(--border-color);
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .language-section {
+            margin-top: 50px;
+        }
+        
+        .optional-tag {
+            background-color: rgba(255, 149, 0, 0.1);
+            color: #FF9500;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>⚡️ Privacy Policy für Timekiller</h1>
-    <div class="meta">
-        <strong>Last Updated:</strong> December 22, 2024
-    </div>
-    
-    <!-- English Section -->
-    <div class="lang-section">
-        <h2>🇬🇧 English</h2>
+    <div class="container">
+        <h1>Privacy Policy / Datenschutzerklärung</h1>
+        <p class="subtitle"><strong>Timekiller</strong> - Fast-Paced Puzzle Game<br>
+        Last Updated / Letzte Aktualisierung: December 29, 2024</p>
         
-        <h3>Privacy Policy</h3>
+        <!-- ENGLISH VERSION -->
+        <h2>English Version</h2>
+        
+        <h3>Data Collection</h3>
         <div class="highlight">
-            <strong>Timekiller</strong> fully respects your privacy.
+            <strong>Timekiller respects your privacy.</strong> This app:
         </div>
         
-        <h4>No Data Collection</h4>
-        <p>This app collects <strong>NO</strong> personal data. We do not collect, store, or transmit any information about you.</p>
-        
-        <h4>Local Storage</h4>
-        <p>All your settings and highscores are stored exclusively <strong>locally on your device</strong> using iOS UserDefaults. This data:</p>
         <ul>
-            <li>Never leaves your device</li>
-            <li>Is not transmitted to servers</li>
-            <li>Is not shared with third parties</li>
-            <li>Can be deleted at any time by removing the app</li>
+            <li><strong>Does NOT collect any personal data</strong></li>
+            <li><strong>Does NOT track your behavior</strong></li>
+            <li><strong>Does NOT use analytics services</strong></li>
+            <li><strong>Does NOT share data with third parties</strong></li>
+            <li><strong>Does NOT require an account</strong></li>
         </ul>
         
-        <h4>Stored Information (local only)</h4>
-        <ul>
-            <li>Player name (optional, entered by you)</li>
-            <li>Game settings (language, theme, grid size, etc.)</li>
-            <li>Highscores (Top 10 game scores)</li>
+        <h3>Data Storage</h3>
+        <p>All data is stored <strong>locally on your device</strong> using iOS UserDefaults:</p>
+        
+        <ul class="check">
+            <li><strong>Player names</strong> - Stored locally</li>
+            <li><strong>Highscores</strong> - Stored locally (and optionally synced to Game Center)</li>
+            <li><strong>Game settings</strong> - Stored locally</li>
+            <li><strong>Achievements</strong> - Stored locally (and optionally synced to Game Center on iOS)</li>
+            <li><strong>In-App Purchase status</strong> - Managed by Apple (StoreKit)</li>
         </ul>
         
-        <h4>No Tracking</h4>
-        <p>We use <strong>NO</strong>:</p>
-        <ul>
-            <li>Tracking technologies</li>
-            <li>Analytics services</li>
-            <li>Advertising networks</li>
-            <li>Third-party SDKs</li>
-            <li>Cookies or similar technologies</li>
+        <p><strong>None of this data leaves your device unless you choose to enable Game Center.</strong></p>
+        
+        <h3>Game Center <span class="optional-tag">OPTIONAL</span></h3>
+        <p>Timekiller offers <strong>optional</strong> Game Center integration on iOS:</p>
+        
+        <ul class="check">
+            <li>Game Center is <strong>disabled by default</strong></li>
+            <li>You must <strong>explicitly enable</strong> it in the app settings</li>
+            <li>When enabled, the app uses Apple's Game Center framework to:
+                <ul style="margin-left: 20px;">
+                    <li>Sync your highscores to leaderboards</li>
+                    <li>Sync your achievements</li>
+                    <li>Display your Game Center player name</li>
+                </ul>
+            </li>
+            <li><strong>Data shared with Game Center:</strong>
+                <ul style="margin-left: 20px;">
+                    <li>Your highscores (single integer value)</li>
+                    <li>Your achievement progress (percentages)</li>
+                    <li>No personal information beyond what Game Center already has</li>
+                </ul>
+            </li>
+            <li>Game Center is <strong>not available</strong> on watchOS</li>
+            <li>You can disable Game Center at any time in settings</li>
+            <li>All data is processed through Apple's Game Center servers</li>
+            <li>Apple's Game Center Privacy Policy applies to this feature</li>
         </ul>
         
-        <h4>No Network Connections</h4>
-        <p>The app works completely offline and makes <strong>NO</strong> connections to external servers.</p>
+        <h3>In-App Purchases</h3>
+        <p>If you purchase premium features:</p>
+        <ul class="check">
+            <li>Transactions are handled by Apple's App Store</li>
+            <li>Apple's Privacy Policy applies to payment processing</li>
+            <li>Purchase status is synced via iCloud (if enabled)</li>
+            <li>No payment data is collected by this app</li>
+        </ul>
         
-        <h4>Children's Protection</h4>
-        <p>Since we collect no data, the app is safe for users of all ages, including children.</p>
+        <h3>Open Source</h3>
+        <p>Timekiller is <strong>open source software</strong>:</p>
+        <ul class="check">
+            <li>Source code: <a href="https://github.com/wlfghdr/Timekiller" target="_blank">GitHub Repository</a></li>
+            <li>You can verify that no data is collected</li>
+            <li>Licensed under MIT License</li>
+        </ul>
         
-        <div class="contact">
-            <h4>Contact</h4>
-            <p>For questions about this privacy policy, contact us:</p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:wulf.ai.m@gmail.com">wulf.ai.m@gmail.com</a><br>
-                <strong>GitHub:</strong> <a href="https://github.com/wlfghdr/tk-p" target="_blank">https://github.com/wlfghdr/tk-p</a>
-            </p>
+        <h3>Children's Privacy</h3>
+        <p>This app is safe for children:</p>
+        <ul class="check">
+            <li>No data collection by default</li>
+            <li>Game Center is optional and disabled by default</li>
+            <li>No advertising</li>
+            <li>No external links (except GitHub in settings)</li>
+            <li>No user-generated content</li>
+            <li>No social features beyond optional Game Center leaderboards</li>
+        </ul>
+        
+        <h3>Your Rights</h3>
+        <p>You can:</p>
+        <ul class="check">
+            <li>Delete all app data by uninstalling the app</li>
+            <li>Disable iCloud sync in iOS Settings</li>
+            <li>Disable Game Center in the app settings</li>
+            <li>Review the source code anytime on GitHub</li>
+        </ul>
+        
+        <h3>Contact</h3>
+        <p>Questions about privacy?</p>
+        <ul class="check">
+            <li>GitHub: <a href="https://github.com/wlfghdr/Timekiller/issues" target="_blank">Open an issue</a></li>
+        </ul>
+        
+        <div class="divider"></div>
+        
+        <!-- GERMAN VERSION -->
+        <div class="language-section">
+            <h2>Deutsche Version</h2>
+            
+            <h3>Datenerfassung</h3>
+            <div class="highlight">
+                <strong>Timekiller respektiert deine Privatsphäre.</strong> Diese App:
+            </div>
+            
+            <ul>
+                <li><strong>Erfasst KEINE persönlichen Daten</strong></li>
+                <li><strong>Verfolgt NICHT dein Verhalten</strong></li>
+                <li><strong>Nutzt KEINE Analyse-Dienste</strong></li>
+                <li><strong>Teilt KEINE Daten mit Dritten</strong></li>
+                <li><strong>Benötigt KEIN Konto</strong></li>
+            </ul>
+            
+            <h3>Datenspeicherung</h3>
+            <p>Alle Daten werden <strong>lokal auf deinem Gerät</strong> gespeichert über iOS UserDefaults:</p>
+            
+            <ul class="check">
+                <li><strong>Spielernamen</strong> - Lokal gespeichert</li>
+                <li><strong>Highscores</strong> - Lokal gespeichert (und optional mit Game Center synchronisiert)</li>
+                <li><strong>Spiel-Einstellungen</strong> - Lokal gespeichert</li>
+                <li><strong>Achievements</strong> - Lokal gespeichert (und optional mit Game Center synchronisiert auf iOS)</li>
+                <li><strong>In-App-Kauf-Status</strong> - Von Apple verwaltet (StoreKit)</li>
+            </ul>
+            
+            <p><strong>Keine dieser Daten verlässt dein Gerät, es sei denn, du aktivierst Game Center.</strong></p>
+            
+            <h3>Game Center <span class="optional-tag">OPTIONAL</span></h3>
+            <p>Timekiller bietet <strong>optionale</strong> Game Center-Integration auf iOS:</p>
+            
+            <ul class="check">
+                <li>Game Center ist <strong>standardmäßig deaktiviert</strong></li>
+                <li>Du musst es <strong>explizit aktivieren</strong> in den App-Einstellungen</li>
+                <li>Wenn aktiviert, nutzt die App Apples Game Center Framework um:
+                    <ul style="margin-left: 20px;">
+                        <li>Deine Highscores mit Bestenlisten zu synchronisieren</li>
+                        <li>Deine Achievements zu synchronisieren</li>
+                        <li>Deinen Game Center-Spielernamen anzuzeigen</li>
+                    </ul>
+                </li>
+                <li><strong>Mit Game Center geteilte Daten:</strong>
+                    <ul style="margin-left: 20px;">
+                        <li>Deine Highscores (einzelner Integer-Wert)</li>
+                        <li>Dein Achievement-Fortschritt (Prozentsätze)</li>
+                        <li>Keine persönlichen Informationen außer dem, was Game Center bereits hat</li>
+                    </ul>
+                </li>
+                <li>Game Center ist <strong>nicht verfügbar</strong> auf watchOS</li>
+                <li>Du kannst Game Center jederzeit in den Einstellungen deaktivieren</li>
+                <li>Alle Daten werden über Apples Game Center-Server verarbeitet</li>
+                <li>Apples Game Center-Datenschutzrichtlinie gilt für diese Funktion</li>
+            </ul>
+            
+            <h3>In-App-Käufe</h3>
+            <p>Falls du Premium-Features kaufst:</p>
+            <ul class="check">
+                <li>Transaktionen werden vom Apple App Store abgewickelt</li>
+                <li>Apples Datenschutzrichtlinie gilt für die Zahlungsabwicklung</li>
+                <li>Kauf-Status wird via iCloud synchronisiert (falls aktiviert)</li>
+                <li>Keine Zahlungsdaten werden von dieser App erfasst</li>
+            </ul>
+            
+            <h3>Open Source</h3>
+            <p>Timekiller ist <strong>Open-Source-Software</strong>:</p>
+            <ul class="check">
+                <li>Quellcode: <a href="https://github.com/wlfghdr/Timekiller" target="_blank">GitHub Repository</a></li>
+                <li>Du kannst überprüfen, dass keine Daten erfasst werden</li>
+                <li>Lizenziert unter MIT-Lizenz</li>
+            </ul>
+            
+            <h3>Datenschutz für Kinder</h3>
+            <p>Diese App ist sicher für Kinder:</p>
+            <ul class="check">
+                <li>Keine Datenerfassung standardmäßig</li>
+                <li>Game Center ist optional und standardmäßig deaktiviert</li>
+                <li>Keine Werbung</li>
+                <li>Keine externen Links (außer GitHub in Einstellungen)</li>
+                <li>Keine nutzergenerierten Inhalte</li>
+                <li>Keine sozialen Funktionen außer optionalen Game Center-Bestenlisten</li>
+            </ul>
+            
+            <h3>Deine Rechte</h3>
+            <p>Du kannst:</p>
+            <ul class="check">
+                <li>Alle App-Daten durch Deinstallation löschen</li>
+                <li>iCloud-Synchronisation in iOS-Einstellungen deaktivieren</li>
+                <li>Game Center in den App-Einstellungen deaktivieren</li>
+                <li>Den Quellcode jederzeit auf GitHub einsehen</li>
+            </ul>
+            
+            <h3>Kontakt</h3>
+            <p>Fragen zum Datenschutz?</p>
+            <ul class="check">
+                <li>GitHub: <a href="https://github.com/wlfghdr/Timekiller/issues" target="_blank">Issue öffnen</a></li>
+            </ul>
         </div>
-    </div>
-    
-    <!-- German Section -->
-    <div class="lang-section">
-        <h2>🇩🇪 Deutsch</h2>
         
-        <h3>Datenschutzerklärung</h3>
-        <div class="highlight">
-            <strong>Timekiller</strong> respektiert Ihre Privatsphäre vollständig.
+        <div class="divider"></div>
+        
+        <!-- TECHNICAL DETAILS -->
+        <h2>Technical Details</h2>
+        
+        <h3>iOS Technologies Used</h3>
+        <p>This app uses only Apple's native frameworks:</p>
+        <ul class="check">
+            <li><strong>SwiftUI</strong> - User interface</li>
+            <li><strong>Foundation</strong> - Core functionality</li>
+            <li><strong>UserDefaults</strong> - Local storage</li>
+            <li><strong>StoreKit</strong> - In-App Purchases (handled by Apple)</li>
+            <li><strong>AVFoundation</strong> - Sound effects (local files only)</li>
+            <li><strong>CoreHaptics</strong> - Haptic feedback (device-only)</li>
+            <li><strong>GameKit</strong> - Game Center integration (optional, iOS only)</li>
+        </ul>
+        
+        <p><strong>No third-party SDKs or tracking libraries.</strong></p>
+        
+        <h3>Network Access</h3>
+        <p>This app:</p>
+        <ul class="negative">
+            <li>Does NOT connect to any servers (except when Game Center is enabled)</li>
+            <li>Does NOT make network requests (except for optional Game Center)</li>
+            <li>Does NOT load remote content</li>
+        </ul>
+        
+        <ul class="check">
+            <li>Only contacts Apple servers for:
+                <ul style="margin-left: 20px;">
+                    <li>App Store purchase verification</li>
+                    <li>iCloud sync (if user enables it)</li>
+                    <li>Game Center sync (if user enables it on iOS)</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Changes to This Policy</h3>
+        <p>If this privacy policy changes:</p>
+        <ul class="check">
+            <li>Updated version will be posted on GitHub</li>
+            <li>"Last Updated" date will be changed</li>
+            <li>Users will be notified in app update notes</li>
+        </ul>
+        
+        <h3>Compliance</h3>
+        <p>This app complies with:</p>
+        <div style="margin: 20px 0;">
+            <span class="badge">🇪🇺 GDPR</span>
+            <span class="badge">🇺🇸 COPPA</span>
+            <span class="badge">🇺🇸 CCPA</span>
+            <span class="badge">🍎 App Store Guidelines</span>
         </div>
         
-        <h4>Keine Datensammlung</h4>
-        <p>Diese App sammelt <strong>KEINE</strong> persönlichen Daten. Wir erheben, speichern oder übertragen keinerlei Informationen über Sie.</p>
-        
-        <h4>Lokale Speicherung</h4>
-        <p>Alle Ihre Einstellungen und Highscores werden ausschließlich <strong>lokal auf Ihrem Gerät</strong> gespeichert mittels iOS UserDefaults. Diese Daten:</p>
-        <ul>
-            <li>Verlassen niemals Ihr Gerät</li>
-            <li>Werden nicht an Server übertragen</li>
-            <li>Werden nicht mit Dritten geteilt</li>
-            <li>Können jederzeit durch Löschen der App entfernt werden</li>
-        </ul>
-        
-        <h4>Gespeicherte Informationen (nur lokal)</h4>
-        <ul>
-            <li>Spielername (optional, von Ihnen eingegeben)</li>
-            <li>Spiel-Einstellungen (Sprache, Theme, Grid-Größe, etc.)</li>
-            <li>Highscores (Top 10 Spielstände)</li>
-        </ul>
-        
-        <h4>Kein Tracking</h4>
-        <p>Wir nutzen <strong>KEINE</strong>:</p>
-        <ul>
-            <li>Tracking-Technologien</li>
-            <li>Analytics-Dienste</li>
-            <li>Werbe-Netzwerke</li>
-            <li>Third-Party SDKs</li>
-            <li>Cookies oder ähnliche Technologien</li>
-        </ul>
-        
-        <h4>Keine Netzwerk-Verbindungen</h4>
-        <p>Die App funktioniert vollständig offline und stellt <strong>KEINE</strong> Verbindungen zu externen Servern her.</p>
-        
-        <h4>Kinder-Schutz</h4>
-        <p>Da wir keine Daten sammeln, ist die App sicher für Nutzer jeden Alters, einschließlich Kinder.</p>
-        
-        <div class="contact">
-            <h4>Kontakt</h4>
-            <p>Bei Fragen zu dieser Datenschutzerklärung kontaktieren Sie uns:</p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:wulf.ai.m@gmail.com">wulf.ai.m@gmail.com</a><br>
-                <strong>GitHub:</strong> <a href="https://github.com/wlfghdr/tk-p" target="_blank">https://github.com/wlfghdr/tk-p</a>
-            </p>
+        <div class="footer">
+            Privacy is a fundamental right. Timekiller respects that. 🔒
         </div>
-    </div>
-    
-    <div class="footer">
-        <h3>Legal Notes</h3>
-        <p>This privacy policy applies to the Timekiller app developed by Wolfgang Heider.</p>
-        <p>
-            <strong>Version:</strong> 1.0<br>
-            <strong>Date:</strong> December 22, 2024<br>
-            <strong>Developer:</strong> Wolfgang Heider
-        </p>
     </div>
 </body>
 </html>
