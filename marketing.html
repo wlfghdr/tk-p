@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timekiller - The ultimate reaction time game with Game Center leaderboards and Apple Watch support">
+    <title>Timekiller - Test Your Reflexes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 26px;
+            margin: 0 auto 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .tagline {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 30px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-description {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .platform-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            transition: opacity 0.2s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 60px 0;
+        }
+
+        .lang-section {
+            margin: 60px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 1.1em;
+            }
+
+            .content-section {
+                padding: 30px 20px;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- English Section -->
+        <div class="lang-section" lang="en">
+            <header>
+                <div class="app-icon">⚡</div>
+                <h1>Timekiller</h1>
+                <p class="tagline">Test your reflexes. Compete globally. Master your reaction time.</p>
+                <a href="https://apps.apple.com/app/id6757088485" class="cta-button">Download on the App Store</a>
+            </header>
+
+            <div class="content-section">
+                <h2 class="section-title">Challenge Players Worldwide</h2>
+                
+                <div class="highlight-box">
+                    <h3>🏆 Game Center Integration</h3>
+                    <p>Compete with players around the globe on our Game Center leaderboards! Track your best times, earn achievements, and see how you rank against the world's fastest reflexes. Every millisecond counts!</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3 class="feature-title">Global Leaderboards</h3>
+                        <p class="feature-description">Climb the ranks and prove you have the fastest reaction time. Compare your scores with friends and players worldwide through Game Center.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⌚</div>
+                        <h3 class="feature-title">Apple Watch Edition</h3>
+                        <p class="feature-description">Play directly on your Apple Watch! Train your reflexes anytime, anywhere. Perfect for quick gaming sessions on the go.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-description">Minimalist design meets maximum performance. No distractions, just pure reaction time testing with millisecond precision.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Track Progress</h3>
+                        <p class="feature-description">Monitor your improvement over time. See your statistics, personal bests, and watch your reflexes get faster with practice.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🏅</div>
+                        <h3 class="feature-title">Achievements</h3>
+                        <p class="feature-description">Unlock Game Center achievements like "Ultra Instinct", "Geometry Genius", or "The Unkillable" as you master the game. 20+ achievements to collect!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3 class="feature-title">Universal App</h3>
+                        <p class="feature-description">Seamlessly sync your progress across iPhone, iPad, and Apple Watch. One purchase, all devices.</p>
+                    </div>
+                </div>
+
+                <div class="platform-badges">
+                    <div class="badge">📱 iPhone</div>
+                    <div class="badge">💻 iPad</div>
+                    <div class="badge">⌚ Apple Watch</div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">How Fast Are Your Reflexes?</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    Timekiller is the ultimate reaction time game. When the screen changes, tap as fast as you can! 
+                    With Game Center integration, you can compete with millions of players worldwide and see if you have what it takes to reach the top of the leaderboards.
+                    Whether you're playing on your iPhone or quick-tapping on your Apple Watch, every session is a chance to beat your personal best.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">🏆 Unlock Achievements</h2>
+                <p style="text-align: center; font-size: 1.1em; color: #555; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
+                    Challenge yourself to unlock over 20 Game Center achievements as you progress through different game modes:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+                    <div style="padding: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">⚡</div>
+                        <strong style="font-size: 1.2em;">Ultra Instinct</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Reach Level 30 and unlock Pro Mode</p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; color: white;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🔷</div>
+                        <strong style="font-size: 1.2em;">Geometry Genius</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Master Level 30 in Shapes Standard</p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 12px; color: white;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🌈</div>
+                        <strong style="font-size: 1.2em;">Rainbow Annihilator</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Conquer Level 30 in Colors Pro</p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 12px; color: #333;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">👑</div>
+                        <strong style="font-size: 1.2em;">The Unkillable</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px;">Ultimate achievement: Level 30 in all 6 modes!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- German Section -->
+        <div class="lang-section" lang="de">
+            <header>
+                <div class="app-icon">⚡</div>
+                <h1>Timekiller</h1>
+                <p class="tagline">Teste deine Reflexe. Tritt weltweit an. Meistere deine Reaktionszeit.</p>
+                <a href="https://apps.apple.com/app/id6757088485" class="cta-button">Im App Store laden</a>
+            </header>
+
+            <div class="content-section">
+                <h2 class="section-title">Fordere Spieler weltweit heraus</h2>
+                
+                <div class="highlight-box">
+                    <h3>🏆 Game Center Integration</h3>
+                    <p>Tritt gegen Spieler aus aller Welt in unseren Game Center Bestenlisten an! Verfolge deine besten Zeiten, sammle Erfolge und finde heraus, wie du im Vergleich zu den schnellsten Reflexen der Welt abschneidest. Jede Millisekunde zählt!</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3 class="feature-title">Globale Bestenlisten</h3>
+                        <p class="feature-description">Klettere die Ränge hinauf und beweise, dass du die schnellste Reaktionszeit hast. Vergleiche deine Ergebnisse mit Freunden und Spielern weltweit über Game Center.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⌚</div>
+                        <h3 class="feature-title">Apple Watch Edition</h3>
+                        <p class="feature-description">Spiele direkt auf deiner Apple Watch! Trainiere deine Reflexe jederzeit und überall. Perfekt für schnelle Gaming-Sessions unterwegs.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Blitzschnell</h3>
+                        <p class="feature-description">Minimalistisches Design trifft auf maximale Performance. Keine Ablenkungen, nur reines Reaktionszeit-Testing mit Millisekunden-Präzision.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">Fortschritt verfolgen</h3>
+                        <p class="feature-description">Überwache deine Verbesserungen über die Zeit. Sieh deine Statistiken, persönlichen Bestleistungen und wie deine Reflexe durch Training schneller werden.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🏅</div>
+                        <h3 class="feature-title">Erfolge</h3>
+                        <p class="feature-description">Schalte Game Center Erfolge frei wie "Ultra Instinkt", "Geometrie-Genie" oder "Der Unsterbliche". Über 20 Erfolge warten auf dich!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3 class="feature-title">Universal App</h3>
+                        <p class="feature-description">Synchronisiere deinen Fortschritt nahtlos über iPhone, iPad und Apple Watch. Ein Kauf, alle Geräte.</p>
+                    </div>
+                </div>
+
+                <div class="platform-badges">
+                    <div class="badge">📱 iPhone</div>
+                    <div class="badge">💻 iPad</div>
+                    <div class="badge">⌚ Apple Watch</div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">Wie schnell sind deine Reflexe?</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    Timekiller ist das ultimative Reaktionszeit-Spiel. Wenn sich der Bildschirm ändert, tippe so schnell du kannst! 
+                    Mit Game Center Integration kannst du gegen Millionen von Spielern weltweit antreten und herausfinden, ob du das Zeug hast, die Spitze der Bestenlisten zu erreichen.
+                    Ob du auf deinem iPhone spielst oder schnell auf deiner Apple Watch tippst – jede Session ist eine Chance, deine persönliche Bestleistung zu übertreffen.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">🏆 Erfolge freischalten</h2>
+                <p style="text-align: center; font-size: 1.1em; color: #555; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
+                    Fordere dich selbst heraus und schalte über 20 Game Center Erfolge frei, während du durch verschiedene Spielmodi fortschreitest:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+                    <div style="padding: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">⚡</div>
+                        <strong style="font-size: 1.2em;">Ultra Instinkt</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Erreiche Level 30 und schalte Pro-Modus frei</p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; color: white;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🔷</div>
+                        <strong style="font-size: 1.2em;">Geometrie-Genie</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Meistere Level 30 in Formen Standard</p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 12px; color: white;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🌈</div>
+                        <strong style="font-size: 1.2em;">Regenbogen-Vernichter</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Bezwinge Level 30 in Farben Pro</p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 12px; color: #333;">
+                        <div style="font-size: 2em; margin-bottom: 10px;">👑</div>
+                        <strong style="font-size: 1.2em;">Der Unsterbliche</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px;">Ultimativer Erfolg: Level 30 in allen 6 Modi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p style="margin-bottom: 15px;">
+                <strong>Need Help?</strong> Visit our <a href="https://github.com/wlfghdr/tk-p">Support Page</a>
+            </p>
+            <p style="margin-bottom: 15px;">
+                <strong>Brauchst du Hilfe?</strong> Besuche unsere <a href="https://github.com/wlfghdr/tk-p">Support-Seite</a>
+            </p>
+            <p style="margin-bottom: 15px;">
+                <a href="https://wlfghdr.github.io/tk-p/privacy.html">Privacy Policy / Datenschutzerklärung</a>
+            </p>
+            <p style="opacity: 0.8; font-size: 0.9em;">
+                © 2025 Timekiller • wulf.ai
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
