@@ -43,6 +43,13 @@
             align-items: center;
             justify-content: center;
             font-size: 60px;
+            overflow: hidden;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h1 {
@@ -188,6 +195,77 @@
             margin: 60px 0;
         }
 
+        .screenshots-gallery {
+            margin: 50px 0;
+        }
+
+        .screenshot-category {
+            margin: 40px 0;
+        }
+
+        .screenshot-category h3 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .screenshots-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .screenshot-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+            padding: 10px;
+        }
+
+        .screenshot-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .screenshot-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .screenshot-iphone {
+            max-width: 250px;
+        }
+
+        .screenshot-ipad {
+            max-width: 350px;
+        }
+
+        .screenshot-watch {
+            max-width: 180px;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
         .lang-section {
             margin: 60px 0;
         }
@@ -221,7 +299,9 @@
         <!-- English Section -->
         <div class="lang-section" lang="en">
             <header>
-                <div class="app-icon">⚡</div>
+                <div class="app-icon">
+                    <img src="Assets/icon.png" alt="Timekiller Icon">
+                </div>
                 <h1>Timekiller</h1>
                 <p class="tagline">Test your reflexes. Compete globally. Master your reaction time.</p>
                 <a href="https://apps.apple.com/app/id6757088485" class="cta-button">Download on the App Store</a>
@@ -317,6 +397,55 @@
                     </div>
                 </div>
             </div>
+
+            <div class="content-section">
+                <h2 class="section-title">📸 See Timekiller in Action</h2>
+                <div class="screenshots-gallery">
+                    <div class="screenshot-category">
+                        <h3>📱 iPhone</h3>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-iphone">
+                                <img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.56.56.png" alt="Timekiller on iPhone - Game Screen">
+                            </div>
+                            <div class="screenshot-item screenshot-iphone">
+                                <img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.03.png" alt="Timekiller on iPhone - Level Selection">
+                            </div>
+                            <div class="screenshot-item screenshot-iphone">
+                                <img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.42.png" alt="Timekiller on iPhone - Achievements">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="screenshot-category">
+                        <h3>💻 iPad</h3>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-ipad">
+                                <img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.47.png" alt="Timekiller on iPad - Main Screen">
+                            </div>
+                            <div class="screenshot-item screenshot-ipad">
+                                <img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.56.png" alt="Timekiller on iPad - Game Mode">
+                            </div>
+                        </div>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-ipad">
+                                <img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.34.36.png" alt="Timekiller on iPad - Pro Mode">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="screenshot-category">
+                        <h3>⌚ Apple Watch</h3>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-watch">
+                                <img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.08.48.png" alt="Timekiller on Apple Watch - Game">
+                            </div>
+                            <div class="screenshot-item screenshot-watch">
+                                <img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.09.07.png" alt="Timekiller on Apple Watch - Menu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="divider"></div>
@@ -324,7 +453,9 @@
         <!-- German Section -->
         <div class="lang-section" lang="de">
             <header>
-                <div class="app-icon">⚡</div>
+                <div class="app-icon">
+                    <img src="Assets/icon.png" alt="Timekiller Icon">
+                </div>
                 <h1>Timekiller</h1>
                 <p class="tagline">Teste deine Reflexe. Tritt weltweit an. Meistere deine Reaktionszeit.</p>
                 <a href="https://apps.apple.com/app/id6757088485" class="cta-button">Im App Store laden</a>
@@ -417,6 +548,55 @@
                         <div style="font-size: 2em; margin-bottom: 10px;">👑</div>
                         <strong style="font-size: 1.2em;">Der Unsterbliche</strong>
                         <p style="font-size: 0.95em; margin-top: 8px;">Ultimativer Erfolg: Level 30 in allen 6 Modi!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">📸 Timekiller in Aktion</h2>
+                <div class="screenshots-gallery">
+                    <div class="screenshot-category">
+                        <h3>📱 iPhone</h3>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-iphone">
+                                <img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.56.56.png" alt="Timekiller auf iPhone - Spielbildschirm">
+                            </div>
+                            <div class="screenshot-item screenshot-iphone">
+                                <img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.03.png" alt="Timekiller auf iPhone - Level-Auswahl">
+                            </div>
+                            <div class="screenshot-item screenshot-iphone">
+                                <img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.42.png" alt="Timekiller auf iPhone - Errungenschaften">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="screenshot-category">
+                        <h3>💻 iPad</h3>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-ipad">
+                                <img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.47.png" alt="Timekiller auf iPad - Hauptbildschirm">
+                            </div>
+                            <div class="screenshot-item screenshot-ipad">
+                                <img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.56.png" alt="Timekiller auf iPad - Spielmodus">
+                            </div>
+                        </div>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-ipad">
+                                <img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.34.36.png" alt="Timekiller auf iPad - Pro-Modus">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="screenshot-category">
+                        <h3>⌚ Apple Watch</h3>
+                        <div class="screenshots-row">
+                            <div class="screenshot-item screenshot-watch">
+                                <img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.08.48.png" alt="Timekiller auf Apple Watch - Spiel">
+                            </div>
+                            <div class="screenshot-item screenshot-watch">
+                                <img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.09.07.png" alt="Timekiller auf Apple Watch - Menü">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
