@@ -57,7 +57,7 @@ If you purchase premium features:
 ### Open Source
 
 Timekiller is **open source software**:
-- Source code: [GitHub Repository](https://github.com/wlfghdr/Timekiller)
+- Source code: [GitHub Repository](https://github.com/wlfghdr/tk-p)
 - You can verify that no data is collected
 - Licensed under MIT License
 
@@ -82,7 +82,7 @@ You can:
 ### Contact
 
 Questions about privacy?
-- GitHub: [Open an issue](https://github.com/wlfghdr/Timekiller/issues)
+- GitHub: [Open an issue](https://github.com/wlfghdr/tk-p/issues)
 
 ---
 
@@ -140,7 +140,7 @@ Falls du Premium-Features kaufst:
 ### Open Source
 
 Timekiller ist **Open-Source-Software**:
-- Quellcode: [GitHub Repository](https://github.com/wlfghdr/Timekiller)
+- Quellcode: [GitHub Repository](https://github.com/wlfghdr/tk-p)
 - Du kannst überprüfen, dass keine Daten erfasst werden
 - Lizenziert unter MIT-Lizenz
 
@@ -165,7 +165,7 @@ Du kannst:
 ### Kontakt
 
 Fragen zum Datenschutz?
-- GitHub: [Issue öffnen](https://github.com/wlfghdr/Timekiller/issues)
+- GitHub: [Issue öffnen](https://github.com/wlfghdr/tk-p/issues)
 
 
 ---
