@@ -18,29 +18,31 @@
 
 ---
 
-## English
-
-### 📸 Screenshots
+## 📸 Screenshots
 
 <div align="center">
 
 #### iPhone
-<img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.56.56.png" width="250" alt="iPhone Screenshot 1">
-<img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.03.png" width="250" alt="iPhone Screenshot 2">
-<img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.42.png" width="250" alt="iPhone Screenshot 3">
+<img src="Assets/iphone_start.png" width="250" alt="iPhone Screenshot 1">
+<img src="Assets/iphone_play.png" width="250" alt="iPhone Screenshot 2">
+<img src="Assets/iphone_play2.png" width="250" alt="iPhone Screenshot 3">
 
 #### iPad
-<img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.47.png" width="350" alt="iPad Screenshot 1">
-<img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.56.png" width="350" alt="iPad Screenshot 2">
-<img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.34.36.png" width="350" alt="iPad Screenshot 3">
+<img src="Assets/ipad_start.png" width="350" alt="iPad Screenshot 1">
+<img src="Assets/ipad_play.png" width="350" alt="iPad Screenshot 2">
+<img src="Assets/ipad_play2.png" width="350" alt="iPad Screenshot 3">
 
 #### Apple Watch
-<img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.08.48.png" width="200" alt="Apple Watch Screenshot 1">
-<img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.09.07.png" width="200" alt="Apple Watch Screenshot 2">
+<img src="Assets/watch_start.png" width="200" alt="Apple Watch Screenshot 1">
+<img src="Assets/watch_play.png" width="200" alt="Apple Watch Screenshot 2">
 
 </div>
 
+
+
 ---
+
+## English
 
 ### 📖 About
 
@@ -214,27 +216,6 @@ Have a feature request? Let us know on GitHub!
 
 ## Deutsch
 
-### 📸 Screenshots
-
-<div align="center">
-
-#### iPhone
-<img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.56.56.png" width="250" alt="iPhone Screenshot 1">
-<img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.03.png" width="250" alt="iPhone Screenshot 2">
-<img src="Assets/Simulator Screenshot - iPhone 17 Pro Max - 2025-12-26 at 22.57.42.png" width="250" alt="iPhone Screenshot 3">
-
-#### iPad
-<img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.47.png" width="350" alt="iPad Screenshot 1">
-<img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.33.56.png" width="350" alt="iPad Screenshot 2">
-<img src="Assets/Simulator Screenshot - iPad Pro 13-inch (M5) - 2025-12-27 at 00.34.36.png" width="350" alt="iPad Screenshot 3">
-
-#### Apple Watch
-<img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.08.48.png" width="200" alt="Apple Watch Screenshot 1">
-<img src="Assets/Simulator Screenshot - Apple Watch Ultra 3 (49mm) - 2025-12-26 at 23.09.07.png" width="200" alt="Apple Watch Screenshot 2">
-
-</div>
-
----
 
 ### 📖 Über die App
 
