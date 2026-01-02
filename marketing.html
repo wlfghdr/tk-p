@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Timekiller - The ultimate reaction time game with Game Center leaderboards and Apple Watch support">
-    <title>Timekiller - Test Your Reflexes</title>
+    <meta name="description" content="Timekiller - The ultimate puzzle game that tests your brain and reflexes! 5 addictive game modes, 22 achievements, Game Center leaderboards. Free on iPhone, iPad & Apple Watch.">
+    <meta property="og:title" content="Timekiller - How Fast Can You Think?">
+    <meta property="og:description" content="Fast-paced puzzle game with 5 modes: Colors, Numbers, Shapes, Flags & Emojis. Compete globally, unlock achievements, master your speed!">
+    <meta property="og:image" content="Assets/icon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="puzzle game, reaction game, brain training, iOS game, Apple Watch game, Game Center, free game">
+    <title>Timekiller - How Fast Can You Think? 🧠⚡</title>
     <style>
         * {
             margin: 0;
@@ -18,6 +23,7 @@
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
         .container {
@@ -266,6 +272,211 @@
             }
         }
 
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .game-mode-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: white;
+            border-radius: 25px;
+            margin: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+            color: #667eea;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .game-mode-badge:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border-color: #667eea;
+        }
+
+        .game-mode-badge .emoji {
+            font-size: 1.4em;
+        }
+
+        .stats-box {
+            display: inline-block;
+            padding: 20px 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            margin: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .stats-box:hover {
+            transform: scale(1.08);
+        }
+
+        .stats-number {
+            font-size: 3em;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .stats-label {
+            font-size: 1em;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .achievement-preview {
+            display: inline-block;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+            border-radius: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .achievement-preview:hover {
+            transform: translateY(-5px) rotate(2deg);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .achievement-preview .emoji {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .achievement-preview .name {
+            font-weight: 700;
+            color: #333;
+            font-size: 0.9em;
+        }
+
+        .testimonial-box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .testimonial-box::before {
+            content: '"';
+            font-size: 5em;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            color: #667eea;
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-text {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.8;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 1em;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+            padding: 60px 40px;
+            border-radius: 25px;
+            margin: 50px 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feature-grid-compact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .mini-feature {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            border-radius: 20px;
+            font-weight: 600;
+            color: #333;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mini-feature .emoji {
+            font-size: 1.5em;
+        }
+
+        .video-placeholder {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+            padding: 100px 40px;
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-placeholder .play-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
         .lang-section {
             margin: 60px 0;
         }
@@ -299,57 +510,176 @@
         <!-- English Section -->
         <div class="lang-section" lang="en">
             <header>
-                <div class="app-icon">
+                <div class="app-icon pulse-animation">
                     <img src="Assets/icon.png" alt="Timekiller Icon">
                 </div>
-                <h1>Timekiller</h1>
-                <p class="tagline">Test your reflexes. Compete globally. Master your reaction time.</p>
-                <a href="https://apps.apple.com/app/id6757088485" class="cta-button">Download on the App Store</a>
+                <h1>⚡️ Timekiller</h1>
+                <p class="tagline">How fast can you think? 🧠💨</p>
+                <p style="font-size: 1.2em; margin-bottom: 30px; opacity: 0.95;">The ultimate puzzle game that tests your brain and reflexes!</p>
+                <a href="https://apps.apple.com/app/id6757088485" class="cta-button pulse-animation">📱 Download FREE on App Store</a>
+                <p style="font-size: 0.9em; margin-top: 15px; opacity: 0.85;">Available on iPhone, iPad & Apple Watch</p>
             </header>
 
+            <!-- Game Modes Showcase -->
             <div class="content-section">
-                <h2 class="section-title">Challenge Players Worldwide</h2>
+                <h2 class="section-title">🎮 Five Addictive Game Modes</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto 30px; line-height: 1.8;">
+                    Find the tile where the <strong>text matches the background</strong> before time runs out!<br>
+                    Each mode trains your brain differently. Can you master them all?
+                </p>
+                
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; margin: 40px 0;">
+                    <div class="game-mode-badge">
+                        <span class="emoji">🎨</span>
+                        <span><strong>Colors</strong> - 8 colors (16 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">🔢</span>
+                        <span><strong>Numbers</strong> - 0-12 (0-99 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">▲</span>
+                        <span><strong>Shapes</strong> - 10 shapes (21 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">🚩</span>
+                        <span><strong>Flags</strong> - 18 countries (45 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">😎</span>
+                        <span><strong>Emojis</strong> - 16 emojis (64 in Pro)</span>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 20px; margin: 40px 0; text-align: center;">
+                    <h3 style="font-size: 2em; margin-bottom: 20px;">🔥 Progressive Difficulty System</h3>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
+                        <div class="stats-box">
+                            <span class="stats-number">3</span>
+                            <span class="stats-label">Grid Sizes</span>
+                            <p style="font-size: 0.85em; margin-top: 5px; color: #777;">2×2 → 2×4 → 3×5</p>
+                        </div>
+                        <div class="stats-box">
+                            <span class="stats-number">4</span>
+                            <span class="stats-label">Answer Modes</span>
+                            <p style="font-size: 0.85em; margin-top: 5px; color: #777;">1-4 correct tiles/round</p>
+                        </div>
+                        <div class="stats-box">
+                            <span class="stats-number">∞</span>
+                            <span class="stats-label">Endless Levels</span>
+                            <p style="font-size: 0.85em; margin-top: 5px; color: #777;">How far can you go?</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1em; margin-top: 30px; opacity: 0.95;">
+                        ⏱️ From Level 25+: Time reduces by 5% per level!<br>
+                        💥 One mistake allowed per level - second mistake ends the game!
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">🏆 Compete & Achieve</h2>
                 
                 <div class="highlight-box">
-                    <h3>🏆 Game Center Integration</h3>
-                    <p>Compete with players around the globe on our Game Center leaderboards! Track your best times, earn achievements, and see how you rank against the world's fastest reflexes. Every millisecond counts!</p>
+                    <h3>🎮 Game Center Integration (iOS)</h3>
+                    <p>Compete with players around the globe! Sync your progress across devices, climb the leaderboards, and unlock 22 achievements. Your journey from beginner to "The Unkillable" awaits!</p>
                 </div>
+
+                <div style="margin: 50px 0;">
+                    <h3 style="text-align: center; font-size: 2em; color: #667eea; margin-bottom: 30px;">📊 Achievement Progression Path</h3>
+                    <div style="background: linear-gradient(135deg, #f5f7fa, #c3cfe2); padding: 40px; border-radius: 20px;">
+                        <div style="display: flex; flex-direction: column; gap: 20px; max-width: 700px; margin: 0 auto;">
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #34C759;">
+                                <strong style="font-size: 1.2em; color: #34C759;">🔓 Level 1</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Start with <strong>Colors</strong> & <strong>Numbers</strong> modes</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #007AFF;">
+                                <strong style="font-size: 1.2em; color: #007AFF;">🔷 Level 10</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Unlock <strong>Shapes</strong> mode + "Polygon Prodigy" achievement</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #FF9500;">
+                                <strong style="font-size: 1.2em; color: #FF9500;">🚩 Level 15</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Unlock <strong>Flags</strong> mode + "Flag Dropper" achievement</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #FF2D55;">
+                                <strong style="font-size: 1.2em; color: #FF2D55;">😎 Level 20</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Unlock <strong>Emojis</strong> mode + "Smiley Summoner" achievement</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #FF3B30;">
+                                <strong style="font-size: 1.2em; color: #FF3B30;">🔥 Level 30</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Unlock <strong>Pro Mode</strong> (50% more points!) + "Ultra Instinct" achievement</p>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #000000, #434343); padding: 20px; border-radius: 15px; border: 3px solid gold; color: white;">
+                                <strong style="font-size: 1.3em; color: gold;">💀 Ultimate Challenge</strong>
+                                <p style="margin: 10px 0 0 0;">Reach Level 30 in <strong>ALL 10 modes</strong> (5 Standard + 5 Pro) to become <strong>"The Unkillable"</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin: 50px 0;">
+                    <h3 style="font-size: 1.8em; color: #667eea; margin-bottom: 25px;">🏅 Sample Achievements</h3>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                        <div class="achievement-preview">
+                            <span class="emoji">🔷</span>
+                            <span class="name">Polygon Prodigy</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">🌍</span>
+                            <span class="name">Flag Nerd</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">🔥🌈</span>
+                            <span class="name">Rainbow Annihilator</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">🔥😈</span>
+                            <span class="name">Emoji Apocalypse</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">💀</span>
+                            <span class="name">The Unkillable</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1em; color: #555; margin-top: 20px;"><strong>22 achievements</strong> waiting to be unlocked!</p>
+                </div>
+            </div>
 
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">🎮</div>
-                        <h3 class="feature-title">Global Leaderboards</h3>
-                        <p class="feature-description">Climb the ranks and prove you have the fastest reaction time. Compare your scores with friends and players worldwide through Game Center.</p>
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Smart Scoring System</h3>
+                        <p class="feature-description">Earn points for speed + accuracy! Base points × Level bonus × Speed multiplier. Pro Mode gives 50% more points!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h3 class="feature-title">Multiple Profiles</h3>
+                        <p class="feature-description">Create unlimited player profiles! Each player gets their own progress, achievements, and highscores. Perfect for families!</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon">⌚</div>
                         <h3 class="feature-title">Apple Watch Edition</h3>
-                        <p class="feature-description">Play directly on your Apple Watch! Train your reflexes anytime, anywhere. Perfect for quick gaming sessions on the go.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3 class="feature-title">Lightning Fast</h3>
-                        <p class="feature-description">Minimalist design meets maximum performance. No distractions, just pure reaction time testing with millisecond precision.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3 class="feature-title">Track Progress</h3>
-                        <p class="feature-description">Monitor your improvement over time. See your statistics, personal bests, and watch your reflexes get faster with practice.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">🏅</div>
-                        <h3 class="feature-title">Achievements</h3>
-                        <p class="feature-description">Unlock Game Center achievements like "Ultra Instinct", "Geometry Genius", or "The Unkillable" as you master the game. 20+ achievements to collect!</p>
+                        <p class="feature-description">Full game experience on your wrist! Train your reflexes anywhere. Optimized controls for watchOS.</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon">🌐</div>
-                        <h3 class="feature-title">Universal App</h3>
-                        <p class="feature-description">Seamlessly sync your progress across iPhone, iPad, and Apple Watch. One purchase, all devices.</p>
+                        <h3 class="feature-title">Fully Localized</h3>
+                        <p class="feature-description">Available in English & German. Perfect UI for all screen sizes from Apple Watch to iPad Pro.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔊</div>
+                        <h3 class="feature-title">Immersive Feedback</h3>
+                        <p class="feature-description">Satisfying sound effects + haptic feedback make every tap feel incredible. Fully customizable in settings.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌗</div>
+                        <h3 class="feature-title">Beautiful Themes</h3>
+                        <p class="feature-description">Gorgeous light & dark modes that adapt automatically. Modern SwiftUI design with smooth animations.</p>
                     </div>
                 </div>
 
@@ -361,41 +691,119 @@
             </div>
 
             <div class="content-section">
-                <h2 class="section-title">How Fast Are Your Reflexes?</h2>
-                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.8;">
-                    Timekiller is the ultimate reaction time game. When the screen changes, tap as fast as you can! 
-                    With Game Center integration, you can compete with millions of players worldwide and see if you have what it takes to reach the top of the leaderboards.
-                    Whether you're playing on your iPhone or quick-tapping on your Apple Watch, every session is a chance to beat your personal best.
+                <h2 class="section-title">🎮 How Fast Are Your Reflexes?</h2>
+                <p style="text-align: center; font-size: 1.3em; color: #555; max-width: 800px; margin: 0 auto 30px; line-height: 1.8;">
+                    <strong>Find the tile where the text matches the background!</strong>
                 </p>
+                <p style="text-align: center; font-size: 1.1em; color: #666; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
+                    Sounds simple? Wait until the clock starts ticking! Progress through endless levels with increasing difficulty. 
+                    Start with 2×2 grids finding 1 match, advance to 3×5 grids finding 4 matches per round!
+                </p>
+
+                <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 50px 30px; border-radius: 20px; margin: 40px 0; color: white;">
+                    <h3 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;">🎯 Simple to Learn, Hard to Master</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">1️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Choose Your Mode</h4>
+                            <p style="opacity: 0.9;">Colors, Numbers, Shapes, Flags, or Emojis</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">2️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Tap Start</h4>
+                            <p style="opacity: 0.9;">The timer begins counting down!</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">3️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Find Matches</h4>
+                            <p style="opacity: 0.9;">Tap tiles where text = background</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">4️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Complete 6 Rounds</h4>
+                            <p style="opacity: 0.9;">Finish to advance to the next level</p>
+                        </div>
+                    </div>
+                    <p style="text-align: center; font-size: 1.2em; margin-top: 40px; font-weight: 600;">
+                        ⚠️ You get ONE mistake per level. Second mistake = Game Over!
+                    </p>
+                </div>
+
+                <div class="cta-section">
+                    <h2>💯 Completely Free Forever</h2>
+                    <p>
+                        No ads. No paywalls. No spam. Just pure puzzle fun!<br>
+                        <strong>Optional tip jar</strong> available for those who want to support development.<br>
+                        All donations are 100% voluntary and have <strong>ZERO impact</strong> on gameplay or features.
+                    </p>
+                    <div class="feature-grid-compact">
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>No Ads</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>No Tracking</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>No Internet Required</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>Open Source</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>Privacy First</span>
+                        </div>
+                    </div>
+                    <a href="https://apps.apple.com/app/id6757088485" class="cta-button" style="margin-top: 30px; display: inline-block;">
+                        🚀 Download Now - It's FREE!
+                    </a>
+                </div>
             </div>
 
             <div class="content-section">
-                <h2 class="section-title">🏆 Unlock Achievements</h2>
-                <p style="text-align: center; font-size: 1.1em; color: #555; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
-                    Challenge yourself to unlock over 20 Game Center achievements as you progress through different game modes:
+                <h2 class="section-title">🏆 22 Achievements to Unlock</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
+                    Your journey from novice to master! Each achievement unlocks new content and bragging rights.
                 </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
-                    <div style="padding: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">⚡</div>
-                        <strong style="font-size: 1.2em;">Ultra Instinct</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Reach Level 30 and unlock Pro Mode</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto;">
+                    <div style="padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🔷</div>
+                        <strong style="font-size: 1.3em;">Polygon Prodigy</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 10 in Colors → Unlocks Shapes Mode!</p>
                     </div>
-                    <div style="padding: 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; color: white;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">🔷</div>
-                        <strong style="font-size: 1.2em;">Geometry Genius</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Master Level 30 in Shapes Standard</p>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🚩</div>
+                        <strong style="font-size: 1.3em;">Flag Dropper</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 15 in Colors → Unlocks Flags Mode!</p>
                     </div>
-                    <div style="padding: 20px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 12px; color: white;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">🌈</div>
-                        <strong style="font-size: 1.2em;">Rainbow Annihilator</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Conquer Level 30 in Colors Pro</p>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">😎</div>
+                        <strong style="font-size: 1.3em;">Smiley Summoner</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 20 in Colors → Unlocks Emojis Mode!</p>
                     </div>
-                    <div style="padding: 20px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 12px; color: #333;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">👑</div>
-                        <strong style="font-size: 1.2em;">The Unkillable</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px;">Ultimate achievement: Level 30 in all 6 modes!</p>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🔥</div>
+                        <strong style="font-size: 1.3em;">Ultra Instinct</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 30 in any mode → Unlocks Pro Mode!</p>
+                    </div>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #5f72bd 0%, #9b23ea 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🌍</div>
+                        <strong style="font-size: 1.3em;">Flag Nerd</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Master Level 20 in Flags Standard</p>
+                    </div>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); border-radius: 15px; color: white; border: 3px solid gold; box-shadow: 0 12px 35px rgba(0,0,0,0.3);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">💀</div>
+                        <strong style="font-size: 1.3em;">The Unkillable</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 30 in ALL 10 modes - Ultimate bragging rights!</p>
                     </div>
                 </div>
+                <p style="text-align: center; font-size: 1.1em; color: #667eea; margin-top: 40px; font-weight: 600;">
+                    Plus 16 more achievements spanning Early, Intermediate, Advanced, and Pro Mastery tiers!
+                </p>
             </div>
 
             <div class="content-section">
@@ -453,57 +861,176 @@
         <!-- German Section -->
         <div class="lang-section" lang="de">
             <header>
-                <div class="app-icon">
+                <div class="app-icon pulse-animation">
                     <img src="Assets/icon.png" alt="Timekiller Icon">
                 </div>
-                <h1>Timekiller</h1>
-                <p class="tagline">Teste deine Reflexe. Tritt weltweit an. Meistere deine Reaktionszeit.</p>
-                <a href="https://apps.apple.com/app/id6757088485" class="cta-button">Im App Store laden</a>
+                <h1>⚡️ Timekiller</h1>
+                <p class="tagline">Wie schnell kannst du denken? 🧠💨</p>
+                <p style="font-size: 1.2em; margin-bottom: 30px; opacity: 0.95;">Das ultimative Puzzle-Spiel, das dein Gehirn und deine Reflexe testet!</p>
+                <a href="https://apps.apple.com/app/id6757088485" class="cta-button pulse-animation">📱 KOSTENLOS im App Store</a>
+                <p style="font-size: 0.9em; margin-top: 15px; opacity: 0.85;">Verfügbar auf iPhone, iPad & Apple Watch</p>
             </header>
 
+            <!-- Game Modes Showcase -->
             <div class="content-section">
-                <h2 class="section-title">Fordere Spieler weltweit heraus</h2>
+                <h2 class="section-title">🎮 Fünf süchtig machende Spielmodi</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto 30px; line-height: 1.8;">
+                    Finde die Kachel, bei der <strong>Text und Hintergrund übereinstimmen</strong>, bevor die Zeit abläuft!<br>
+                    Jeder Modus trainiert dein Gehirn anders. Kannst du sie alle meistern?
+                </p>
+                
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; margin: 40px 0;">
+                    <div class="game-mode-badge">
+                        <span class="emoji">🎨</span>
+                        <span><strong>Farben</strong> - 8 Farben (16 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">🔢</span>
+                        <span><strong>Zahlen</strong> - 0-12 (0-99 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">▲</span>
+                        <span><strong>Formen</strong> - 10 Formen (21 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">🚩</span>
+                        <span><strong>Flaggen</strong> - 18 Länder (45 in Pro)</span>
+                    </div>
+                    <div class="game-mode-badge">
+                        <span class="emoji">😎</span>
+                        <span><strong>Emojis</strong> - 16 Emojis (64 in Pro)</span>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 20px; margin: 40px 0; text-align: center;">
+                    <h3 style="font-size: 2em; margin-bottom: 20px;">🔥 Progressives Schwierigkeitssystem</h3>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
+                        <div class="stats-box">
+                            <span class="stats-number">3</span>
+                            <span class="stats-label">Rastergrößen</span>
+                            <p style="font-size: 0.85em; margin-top: 5px; color: #777;">2×2 → 2×4 → 3×5</p>
+                        </div>
+                        <div class="stats-box">
+                            <span class="stats-number">4</span>
+                            <span class="stats-label">Antwort-Modi</span>
+                            <p style="font-size: 0.85em; margin-top: 5px; color: #777;">1-4 richtige Kacheln/Runde</p>
+                        </div>
+                        <div class="stats-box">
+                            <span class="stats-number">∞</span>
+                            <span class="stats-label">Endlose Level</span>
+                            <p style="font-size: 0.85em; margin-top: 5px; color: #777;">Wie weit kommst du?</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1em; margin-top: 30px; opacity: 0.95;">
+                        ⏱️ Ab Level 25+: Zeit reduziert sich um 5% pro Level!<br>
+                        💥 Ein Fehler pro Level erlaubt - der zweite Fehler beendet das Spiel!
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">🏆 Tritt an & erreiche</h2>
                 
                 <div class="highlight-box">
-                    <h3>🏆 Game Center Integration</h3>
-                    <p>Tritt gegen Spieler aus aller Welt in unseren Game Center Bestenlisten an! Verfolge deine besten Zeiten, sammle Erfolge und finde heraus, wie du im Vergleich zu den schnellsten Reflexen der Welt abschneidest. Jede Millisekunde zählt!</p>
+                    <h3>🎮 Game Center Integration (iOS)</h3>
+                    <p>Tritt gegen Spieler aus aller Welt an! Synchronisiere deinen Fortschritt über Geräte hinweg, klettere die Bestenlisten hinauf und schalte 22 Errungenschaften frei. Deine Reise von Anfänger zu "Der Unsterbliche" wartet!</p>
                 </div>
+
+                <div style="margin: 50px 0;">
+                    <h3 style="text-align: center; font-size: 2em; color: #667eea; margin-bottom: 30px;">📊 Errungenschaften-Fortschritt</h3>
+                    <div style="background: linear-gradient(135deg, #f5f7fa, #c3cfe2); padding: 40px; border-radius: 20px;">
+                        <div style="display: flex; flex-direction: column; gap: 20px; max-width: 700px; margin: 0 auto;">
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #34C759;">
+                                <strong style="font-size: 1.2em; color: #34C759;">🔓 Level 1</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Starte mit <strong>Farben</strong> & <strong>Zahlen</strong> Modi</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #007AFF;">
+                                <strong style="font-size: 1.2em; color: #007AFF;">🔷 Level 10</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Schalte <strong>Formen</strong> frei + "Polygon-Profi" Errungenschaft</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #FF9500;">
+                                <strong style="font-size: 1.2em; color: #FF9500;">🚩 Level 15</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Schalte <strong>Flaggen</strong> frei + "Flaggen-Dropper" Errungenschaft</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #FF2D55;">
+                                <strong style="font-size: 1.2em; color: #FF2D55;">😎 Level 20</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Schalte <strong>Emojis</strong> frei + "Smiley-Beschwörer" Errungenschaft</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 15px; border-left: 5px solid #FF3B30;">
+                                <strong style="font-size: 1.2em; color: #FF3B30;">🔥 Level 30</strong>
+                                <p style="margin: 10px 0 0 0; color: #555;">Schalte <strong>Pro-Modus</strong> frei (50% mehr Punkte!) + "Ultra Instinkt" Errungenschaft</p>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #000000, #434343); padding: 20px; border-radius: 15px; border: 3px solid gold; color: white;">
+                                <strong style="font-size: 1.3em; color: gold;">💀 Ultimative Herausforderung</strong>
+                                <p style="margin: 10px 0 0 0;">Erreiche Level 30 in <strong>ALLEN 10 Modi</strong> (5 Standard + 5 Pro) um <strong>"Der Unsterbliche"</strong> zu werden</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin: 50px 0;">
+                    <h3 style="font-size: 1.8em; color: #667eea; margin-bottom: 25px;">🏅 Beispiel-Errungenschaften</h3>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                        <div class="achievement-preview">
+                            <span class="emoji">🔷</span>
+                            <span class="name">Polygon-Profi</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">🌍</span>
+                            <span class="name">Flaggen-Nerd</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">🔥🌈</span>
+                            <span class="name">Regenbogen-Vernichter</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">🔥😈</span>
+                            <span class="name">Emoji-Apokalypse</span>
+                        </div>
+                        <div class="achievement-preview">
+                            <span class="emoji">💀</span>
+                            <span class="name">Der Unsterbliche</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.1em; color: #555; margin-top: 20px;"><strong>22 Errungenschaften</strong> warten darauf, freigeschaltet zu werden!</p>
+                </div>
+            </div>
 
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">🎮</div>
-                        <h3 class="feature-title">Globale Bestenlisten</h3>
-                        <p class="feature-description">Klettere die Ränge hinauf und beweise, dass du die schnellste Reaktionszeit hast. Vergleiche deine Ergebnisse mit Freunden und Spielern weltweit über Game Center.</p>
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Intelligentes Punktesystem</h3>
+                        <p class="feature-description">Verdiene Punkte für Geschwindigkeit + Genauigkeit! Basispunkte × Level-Bonus × Geschwindigkeits-Multiplikator. Pro-Modus gibt 50% mehr Punkte!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h3 class="feature-title">Mehrere Profile</h3>
+                        <p class="feature-description">Erstelle unbegrenzt Spielerprofile! Jeder Spieler hat eigenen Fortschritt, Errungenschaften und Highscores. Perfekt für Familien!</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon">⌚</div>
                         <h3 class="feature-title">Apple Watch Edition</h3>
-                        <p class="feature-description">Spiele direkt auf deiner Apple Watch! Trainiere deine Reflexe jederzeit und überall. Perfekt für schnelle Gaming-Sessions unterwegs.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3 class="feature-title">Blitzschnell</h3>
-                        <p class="feature-description">Minimalistisches Design trifft auf maximale Performance. Keine Ablenkungen, nur reines Reaktionszeit-Testing mit Millisekunden-Präzision.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3 class="feature-title">Fortschritt verfolgen</h3>
-                        <p class="feature-description">Überwache deine Verbesserungen über die Zeit. Sieh deine Statistiken, persönlichen Bestleistungen und wie deine Reflexe durch Training schneller werden.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">🏅</div>
-                        <h3 class="feature-title">Erfolge</h3>
-                        <p class="feature-description">Schalte Game Center Erfolge frei wie "Ultra Instinkt", "Geometrie-Genie" oder "Der Unsterbliche". Über 20 Erfolge warten auf dich!</p>
+                        <p class="feature-description">Vollständiges Spielerlebnis am Handgelenk! Trainiere deine Reflexe überall. Optimierte Steuerung für watchOS.</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon">🌐</div>
-                        <h3 class="feature-title">Universal App</h3>
-                        <p class="feature-description">Synchronisiere deinen Fortschritt nahtlos über iPhone, iPad und Apple Watch. Ein Kauf, alle Geräte.</p>
+                        <h3 class="feature-title">Voll lokalisiert</h3>
+                        <p class="feature-description">Verfügbar in Deutsch & Englisch. Perfekte UI für alle Bildschirmgrößen von Apple Watch bis iPad Pro.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔊</div>
+                        <h3 class="feature-title">Immersives Feedback</h3>
+                        <p class="feature-description">Befriedigende Soundeffekte + Haptik-Feedback machen jeden Tap unglaublich. Vollständig anpassbar in Einstellungen.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🌗</div>
+                        <h3 class="feature-title">Schöne Themes</h3>
+                        <p class="feature-description">Wunderschöne Light & Dark Modi, die sich automatisch anpassen. Modernes SwiftUI Design mit sanften Animationen.</p>
                     </div>
                 </div>
 
@@ -515,41 +1042,119 @@
             </div>
 
             <div class="content-section">
-                <h2 class="section-title">Wie schnell sind deine Reflexe?</h2>
-                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.8;">
-                    Timekiller ist das ultimative Reaktionszeit-Spiel. Wenn sich der Bildschirm ändert, tippe so schnell du kannst! 
-                    Mit Game Center Integration kannst du gegen Millionen von Spielern weltweit antreten und herausfinden, ob du das Zeug hast, die Spitze der Bestenlisten zu erreichen.
-                    Ob du auf deinem iPhone spielst oder schnell auf deiner Apple Watch tippst – jede Session ist eine Chance, deine persönliche Bestleistung zu übertreffen.
+                <h2 class="section-title">🎮 Wie schnell sind deine Reflexe?</h2>
+                <p style="text-align: center; font-size: 1.3em; color: #555; max-width: 800px; margin: 0 auto 30px; line-height: 1.8;">
+                    <strong>Finde die Kachel, wo Text und Hintergrund übereinstimmen!</strong>
                 </p>
+                <p style="text-align: center; font-size: 1.1em; color: #666; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
+                    Klingt einfach? Warte, bis die Uhr zu ticken beginnt! Schreite durch endlose Level mit steigender Schwierigkeit voran. 
+                    Starte mit 2×2 Rastern und 1 Match, steige auf zu 3×5 Rastern mit 4 Matches pro Runde!
+                </p>
+
+                <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 50px 30px; border-radius: 20px; margin: 40px 0; color: white;">
+                    <h3 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;">🎯 Einfach zu lernen, schwer zu meistern</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto;">
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">1️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Wähle deinen Modus</h4>
+                            <p style="opacity: 0.9;">Farben, Zahlen, Formen, Flaggen oder Emojis</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">2️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Tippe Start</h4>
+                            <p style="opacity: 0.9;">Der Timer beginnt den Countdown!</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">3️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Finde Übereinstimmungen</h4>
+                            <p style="opacity: 0.9;">Tippe Kacheln wo Text = Hintergrund</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 3em; margin-bottom: 15px;">4️⃣</div>
+                            <h4 style="font-size: 1.3em; margin-bottom: 10px;">Schließe 6 Runden ab</h4>
+                            <p style="opacity: 0.9;">Beende sie, um zum nächsten Level aufzusteigen</p>
+                        </div>
+                    </div>
+                    <p style="text-align: center; font-size: 1.2em; margin-top: 40px; font-weight: 600;">
+                        ⚠️ Du hast EINEN Fehler pro Level frei. Zweiter Fehler = Game Over!
+                    </p>
+                </div>
+
+                <div class="cta-section">
+                    <h2>💯 Für immer komplett kostenlos</h2>
+                    <p>
+                        Keine Werbung. Keine Paywalls. Kein Spam. Nur purer Puzzle-Spaß!<br>
+                        <strong>Optionales Trinkgeld</strong> für die, die die Entwicklung unterstützen möchten.<br>
+                        Alle Spenden sind 100% freiwillig und haben <strong>NULL Einfluss</strong> auf Gameplay oder Features.
+                    </p>
+                    <div class="feature-grid-compact">
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>Keine Werbung</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>Kein Tracking</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>Kein Internet nötig</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>Open Source</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="emoji">✅</span>
+                            <span>Privatsphäre zuerst</span>
+                        </div>
+                    </div>
+                    <a href="https://apps.apple.com/app/id6757088485" class="cta-button" style="margin-top: 30px; display: inline-block;">
+                        🚀 Jetzt herunterladen - KOSTENLOS!
+                    </a>
+                </div>
             </div>
 
             <div class="content-section">
-                <h2 class="section-title">🏆 Erfolge freischalten</h2>
-                <p style="text-align: center; font-size: 1.1em; color: #555; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
-                    Fordere dich selbst heraus und schalte über 20 Game Center Erfolge frei, während du durch verschiedene Spielmodi fortschreitest:
+                <h2 class="section-title">🏆 22 Errungenschaften freischalten</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #555; max-width: 800px; margin: 0 auto 40px; line-height: 1.8;">
+                    Deine Reise vom Anfänger zum Meister! Jede Errungenschaft schaltet neue Inhalte und Bragging Rights frei.
                 </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
-                    <div style="padding: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">⚡</div>
-                        <strong style="font-size: 1.2em;">Ultra Instinkt</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Erreiche Level 30 und schalte Pro-Modus frei</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto;">
+                    <div style="padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🔷</div>
+                        <strong style="font-size: 1.3em;">Polygon-Profi</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 10 in Farben → Schaltet Formen-Modus frei!</p>
                     </div>
-                    <div style="padding: 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; color: white;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">🔷</div>
-                        <strong style="font-size: 1.2em;">Geometrie-Genie</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Meistere Level 30 in Formen Standard</p>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🚩</div>
+                        <strong style="font-size: 1.3em;">Flaggen-Dropper</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 15 in Farben → Schaltet Flaggen-Modus frei!</p>
                     </div>
-                    <div style="padding: 20px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 12px; color: white;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">🌈</div>
-                        <strong style="font-size: 1.2em;">Regenbogen-Vernichter</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Bezwinge Level 30 in Farben Pro</p>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">😎</div>
+                        <strong style="font-size: 1.3em;">Smiley-Beschwörer</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 20 in Farben → Schaltet Emojis-Modus frei!</p>
                     </div>
-                    <div style="padding: 20px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 12px; color: #333;">
-                        <div style="font-size: 2em; margin-bottom: 10px;">👑</div>
-                        <strong style="font-size: 1.2em;">Der Unsterbliche</strong>
-                        <p style="font-size: 0.95em; margin-top: 8px;">Ultimativer Erfolg: Level 30 in allen 6 Modi!</p>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🔥</div>
+                        <strong style="font-size: 1.3em;">Ultra Instinkt</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 30 in einem Modus → Schaltet Pro-Modus frei!</p>
+                    </div>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #5f72bd 0%, #9b23ea 100%); border-radius: 15px; color: white; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🌍</div>
+                        <strong style="font-size: 1.3em;">Flaggen-Nerd</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Meistere Level 20 in Flaggen Standard</p>
+                    </div>
+                    <div style="padding: 25px; background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); border-radius: 15px; color: white; border: 3px solid gold; box-shadow: 0 12px 35px rgba(0,0,0,0.3);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">💀</div>
+                        <strong style="font-size: 1.3em;">Der Unsterbliche</strong>
+                        <p style="font-size: 0.95em; margin-top: 8px; opacity: 0.95;">Level 30 in ALLEN 10 Modi - Ultimate Bragging Rights!</p>
                     </div>
                 </div>
+                <p style="text-align: center; font-size: 1.1em; color: #667eea; margin-top: 40px; font-weight: 600;">
+                    Plus 16 weitere Errungenschaften über Früh-, Zwischen-, Fortgeschrittenen- und Pro-Meisterschafts-Stufen!
+                </p>
             </div>
 
             <div class="content-section">

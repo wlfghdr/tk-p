@@ -56,9 +56,11 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
 
 ### ✨ Features
 
-- 🎨 **Three Addictive Game Modes**
+- 🎨 **Five Addictive Game Modes**
   - **Colors**: Match color names with backgrounds (8 colors / 16 in Pro mode)
-  - **Shapes**: Match shape names with symbols (12 shapes / 24 in Pro mode)
+  - **Numbers**: Match numbers with their written words (0-12 / 0-99 in Pro mode) – Perfect for all ages!
+  - **Shapes**: Match shape names with symbols (10 shapes / 21 in Pro mode)
+  - **Flags**: Match country names with flag emojis (18 flags / 45 in Pro mode) – Geography challenge!
   - **Emojis**: Match emoji names with icons (16 emojis / 64 in Pro mode!)
   
 - 📊 **Progressive Grid Sizes**
@@ -80,9 +82,10 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
   - One mistake allowed per level – second mistake ends the game!
 
 - 🎮 **Player Features**
-  - 🏅 18 unlockable achievements across all levels
+  - 🏅 22 unlockable achievements across all levels
   - 🔥 Pro mode with expanded content (50% more points!)
-  - 📈 Highscore leaderboard (Top 10)
+  - 📈 Highscore leaderboard (Top 10 local + optional Game Center)
+  - 🎮 Game Center integration (iOS only) - leaderboards & achievements
   - 🔊 Sound effects & haptic feedback
   - 🌗 Beautiful Dark & Light themes
   - 🌍 Fully localized in English & German
@@ -99,10 +102,10 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
 
 ### 🎮 How to Play
 
-1. **Choose Your Mode**: Colors, Shapes, or Emojis
+1. **Choose Your Mode**: Colors, Numbers, Shapes, Flags, or Emojis
 2. **Select Pro Mode** (optional): If unlocked, enable for extra challenge and 50% more points
 3. **Tap Start**: The timer begins!
-4. **Find the Match**: Tap the tile where text = background
+4. **Find the Match**: Tap the tile where text = background (or number = written word, or country name = flag)
 5. **Find Multiple Matches**: At higher levels, you'll need to find 2, 3, or 4 correct tiles per round
 6. **Beat the Clock**: Answer before time runs out
 7. **Complete 6 Rounds**: Finish 6 rounds to advance to the next level
@@ -113,7 +116,7 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
 
 ### 🏅 Achievement System
 
-Unlock 18 exciting achievements as you progress through the levels! The game features a progressive achievement system that rewards your skills and unlocks new content:
+Unlock 22 exciting achievements as you progress through the levels! The game features a progressive achievement system that rewards your skills and unlocks new content:
 
 #### 🌱 Early Achievements (Level 5)
 - **🎨 Color Cadet**: Reach Level 5 in Colors Standard
@@ -122,6 +125,7 @@ Unlock 18 exciting achievements as you progress through the levels! The game fea
 
 #### 🔓 Unlocking Achievements (Unlock New Content!)
 - **🔷 Polygon Prodigy**: Reach Level 10 in Colors Standard → **Unlocks Shapes Mode!**
+- **🚩 Flag Dropper**: Reach Level 15 in Colors Standard → **Unlocks Flags Mode!**
 - **😎 Smiley Summoner**: Reach Level 20 in Colors Standard → **Unlocks Emoji Mode!**
 - **🔥 Ultra Instinct**: Reach Level 30 in any Standard Mode → **Unlocks Pro Mode!**
 
@@ -135,6 +139,13 @@ Unlock 18 exciting achievements as you progress through the levels! The game fea
 - **⬢ Shape Master**: Reach Level 25 in Shapes Standard
 - **😎 Emoji Expert**: Reach Level 25 in Emojis Standard
 
+#### 🔢 Numbers Achievement
+- **🔢 Count on Me**: Reach Level 10 in Numbers Standard
+- **🧮 Number Cruncher**: Reach Level 25 in Numbers Standard
+
+#### 🚩 Flags Achievement
+- **🌍 Flag Nerd**: Reach Level 20 in Flags Standard
+
 #### 🏆 Mastery Achievements (Level 30 Standard)
 - **🎨 Chromatic Champion**: Reach Level 30 in Colors Standard
 - **🔷 Geometry Genius**: Reach Level 30 in Shapes Standard
@@ -146,17 +157,17 @@ Unlock 18 exciting achievements as you progress through the levels! The game fea
 - **🔥😈 Emoji Apocalypse**: Reach Level 30 in Emojis Pro
 
 #### 💀 Ultimate Achievement
-- **💀 The Unkillable**: Reach Level 30 in ALL 6 modes (3 modes × Standard + Pro) – the ultimate bragging rights!
+- **💀 The Unkillable**: Reach Level 30 in ALL 10 modes (5 modes × Standard + Pro) – the ultimate bragging rights!
 
-**Progression Path**: Start with Colors → Unlock Shapes at Level 10 → Unlock Emojis at Level 20 → Unlock Pro Mode at Level 30! Each achievement brings you closer to becoming a true Timekiller champion! 🏆
+**Progression Path**: Start with Colors or Numbers (both unlocked!) → Unlock Shapes at Level 10 → Unlock Flags at Level 15 → Unlock Emojis at Level 20 → Unlock Pro Mode at Level 30! Each achievement brings you closer to becoming a true Timekiller champion! 🏆
 
 ### 💡 Tips & Strategies
 
 - 🎯 **Focus on the match**, not reading everything – train your pattern recognition!
 - ⚡ **Speed matters**, but accuracy is everything! Two wrong taps and you're out.
 - 🔰 **Master the early levels** – time stays constant until level 25, so use this to perfect your skills
-- 🎓 **Learn each mode** – Each mode (Colors, Shapes, Emojis) plays differently and teaches you new patterns
-- 📈 **Strategic progression** – Focus on Colors first to unlock Shapes (level 10), then Emojis (level 20), then Pro (level 30)
+- 🎓 **Learn each mode** – Each mode (Colors, Numbers, Shapes, Flags, Emojis) plays differently and teaches you new patterns
+- 📈 **Strategic progression** – Focus on Colors first to unlock Shapes (level 10), Flags (level 15), then Emojis (level 20), then Pro (level 30)
 - 🔥 **Pro mode** is significantly harder but rewards you with 50% more points
 - ⏱️ **Every second counts** – the faster you answer, the higher your score!
 - 🎲 **Each emoji game is unique** with different random emojis for endless variety
@@ -179,12 +190,15 @@ Unlock 18 exciting achievements as you progress through the levels! The game fea
 ### 🛠 What You Get
 
 - 📱 **Universal App**: One download, works on iPhone, iPad, and Apple Watch
-- 🆓 **Completely Free**: No ads, no in-app purchases, no subscriptions
+- 🆓 **Completely Free to Play**: No ads, no gameplay-affecting purchases
+- ❤️ **Optional Support**: Voluntary tip jar available for those who want to support development (iOS only)
 - 🔒 **Privacy First**: No data collection, no tracking, no internet required
 - 🎨 **Beautiful Design**: Modern SwiftUI interface with smooth animations
 - 🌍 **Fully Localized**: Available in English and German
 - ♿ **Accessible**: Designed to work with VoiceOver and accessibility features
 - 💾 **Your Progress, Your Device**: All highscores and settings stay on your device
+
+**Note on In-App Purchases**: Timekiller includes optional donations (tip jar) that allow players to voluntarily support development. These are purely voluntary and have no impact on gameplay, features, or progression. The game is and will always be completely free to play.
 
 ### 📱 Requirements
 
@@ -205,10 +219,9 @@ Unlock 18 exciting achievements as you progress through the levels! The game fea
 
 We're constantly working to make Timekiller even better! Here's what's on the horizon:
 
-- 🔢 **Additional game modes** (numbers, letters, and more)
 - ♾️ **Endless mode** for non-stop action
-- 🌐 **Online leaderboards** to compete globally
 - 👥 **Multiplayer** challenges with friends
+- 🌐 **More language support**
 
 Have a feature request? Let us know on GitHub!
 
@@ -229,9 +242,11 @@ Perfekt für kurze Spielsessions, Gehirntraining oder zum Wetteifern mit Freunde
 
 ### ✨ Features
 
-- 🎨 **Drei süchtig machende Spielmodi**
+- 🎨 **Fünf süchtig machende Spielmodi**
   - **Farben**: Farbnamen mit Hintergründen abgleichen (8 Farben / 16 im Pro-Modus)
-  - **Formen**: Formennamen mit Symbolen abgleichen (12 Formen / 24 im Pro-Modus)
+  - **Zahlen**: Zahlen mit ihren geschriebenen Wörtern abgleichen (0-12 / 0-99 im Pro-Modus) – Perfekt für alle Altersgruppen!
+  - **Formen**: Formennamen mit Symbolen abgleichen (10 Formen / 21 im Pro-Modus)
+  - **Flaggen**: Ländernamen mit Flaggen-Emojis abgleichen (18 Flaggen / 45 im Pro-Modus) – Geografie-Herausforderung!
   - **Emojis**: Emoji-Namen mit Icons abgleichen (16 Emojis / 64 im Pro-Modus!)
   
 - 📊 **Progressive Rastergrößen**
@@ -253,9 +268,10 @@ Perfekt für kurze Spielsessions, Gehirntraining oder zum Wetteifern mit Freunde
   - Ein Fehler pro Level erlaubt – der zweite Fehler beendet das Spiel!
 
 - 🎮 **Spieler-Features**
-  - 🏅 18 freischaltbare Errungenschaften über alle Level
+  - 🏅 22 freischaltbare Errungenschaften über alle Level
   - 🔥 Pro-Modus mit erweiterten Inhalten (50% mehr Punkte!)
-  - 📈 Highscore-Bestenliste (Top 10)
+  - 📈 Highscore-Bestenliste (Top 10 lokal + optionales Game Center)
+  - 🎮 Game Center Integration (nur iOS) - Bestenlisten & Errungenschaften
   - 🔊 Soundeffekte & Haptik-Feedback
   - 🌗 Wunderschöne Dark & Light Themes
   - 🌍 Vollständig lokalisiert in Deutsch & Englisch
@@ -272,10 +288,10 @@ Perfekt für kurze Spielsessions, Gehirntraining oder zum Wetteifern mit Freunde
 
 ### 🎮 Spielanleitung
 
-1. **Modus wählen**: Farben, Formen oder Emojis
+1. **Modus wählen**: Farben, Zahlen, Formen, Flaggen oder Emojis
 2. **Pro-Modus auswählen** (optional): Falls freigeschaltet, aktiviere für extra Herausforderung und 50% mehr Punkte
 3. **Start antippen**: Der Timer beginnt!
-4. **Match finden**: Tippe die Kachel an, wo Text = Hintergrund
+4. **Match finden**: Tippe die Kachel an, wo Text = Hintergrund (oder Zahl = geschriebenes Wort, oder Ländername = Flagge)
 5. **Mehrere Matches finden**: Bei höheren Leveln musst du 2, 3 oder 4 richtige Kacheln pro Runde finden
 6. **Zeit schlagen**: Antworte bevor die Zeit abläuft
 7. **6 Runden abschließen**: Beende 6 Runden, um zum nächsten Level aufzusteigen
@@ -286,7 +302,7 @@ Perfekt für kurze Spielsessions, Gehirntraining oder zum Wetteifern mit Freunde
 
 ### 🏅 Errungenschaften-System
 
-Schalte 18 spannende Errungenschaften frei, während du durch die Level voranschreitest! Das Spiel bietet ein progressives Errungenschaften-System, das deine Fähigkeiten belohnt und neue Inhalte freischaltet:
+Schalte 22 spannende Errungenschaften frei, während du durch die Level voranschreitest! Das Spiel bietet ein progressives Errungenschaften-System, das deine Fähigkeiten belohnt und neue Inhalte freischaltet:
 
 #### 🌱 Frühe Errungenschaften (Level 5)
 - **🎨 Farb-Kadett**: Erreiche Level 5 in Farben Standard
@@ -295,6 +311,7 @@ Schalte 18 spannende Errungenschaften frei, während du durch die Level voransch
 
 #### 🔓 Freischalt-Errungenschaften (Schalten neue Inhalte frei!)
 - **🔷 Polygon-Profi**: Erreiche Level 10 in Farben Standard → **Schaltet Formen-Modus frei!**
+- **🚩 Flaggen-Dropper**: Erreiche Level 15 in Farben Standard → **Schaltet Flaggen-Modus frei!**
 - **😎 Smiley-Beschwörer**: Erreiche Level 20 in Farben Standard → **Schaltet Emoji-Modus frei!**
 - **🔥 Ultra Instinkt**: Erreiche Level 30 in einem Standard-Modus → **Schaltet Pro-Modus frei!**
 
@@ -308,6 +325,13 @@ Schalte 18 spannende Errungenschaften frei, während du durch die Level voransch
 - **⬢ Form-Meister**: Erreiche Level 25 in Formen Standard
 - **😎 Emoji-Experte**: Erreiche Level 25 in Emojis Standard
 
+#### 🔢 Zahlen-Errungenschaften
+- **🔢 Auf mich zählen**: Erreiche Level 10 in Zahlen Standard
+- **🧮 Zahlenfresser**: Erreiche Level 25 in Zahlen Standard
+
+#### 🚩 Flaggen-Errungenschaft
+- **🌍 Flaggen-Nerd**: Erreiche Level 20 in Flaggen Standard
+
 #### 🏆 Meisterschafts-Errungenschaften (Level 30 Standard)
 - **🎨 Chromatischer Champion**: Erreiche Level 30 in Farben Standard
 - **🔷 Geometrie-Genie**: Erreiche Level 30 in Formen Standard
@@ -319,17 +343,17 @@ Schalte 18 spannende Errungenschaften frei, während du durch die Level voransch
 - **🔥😈 Emoji-Apokalypse**: Erreiche Level 30 in Emojis Pro
 
 #### 💀 Ultimative Errungenschaft
-- **💀 Der Unsterbliche**: Erreiche Level 30 in ALLEN 6 Modi (3 Modi × Standard + Pro) – die ultimativen Bragging Rights!
+- **💀 Der Unsterbliche**: Erreiche Level 30 in ALLEN 10 Modi (5 Modi × Standard + Pro) – die ultimativen Bragging Rights!
 
-**Fortschritts-Pfad**: Starte mit Farben → Schalte Formen bei Level 10 frei → Schalte Emojis bei Level 20 frei → Schalte Pro-Modus bei Level 30 frei! Jede Errungenschaft bringt dich näher daran, ein wahrer Timekiller-Champion zu werden! 🏆
+**Fortschritts-Pfad**: Starte mit Farben oder Zahlen (beide freigeschaltet!) → Schalte Formen bei Level 10 frei → Schalte Flaggen bei Level 15 frei → Schalte Emojis bei Level 20 frei → Schalte Pro-Modus bei Level 30 frei! Jede Errungenschaft bringt dich näher daran, ein wahrer Timekiller-Champion zu werden! 🏆
 
 ### 💡 Tipps & Strategien
 
 - 🎯 **Konzentriere dich auf die Übereinstimmung**, nicht aufs Lesen von allem – trainiere deine Mustererkennung!
 - ⚡ **Geschwindigkeit ist wichtig**, aber Genauigkeit ist alles! Zwei falsche Tipps und du bist raus.
 - 🔰 **Meistere die frühen Level** – die Zeit bleibt bis Level 25 konstant, also nutze das, um deine Fähigkeiten zu perfektionieren
-- 🎓 **Lerne jeden Modus** – Jeder Modus (Farben, Formen, Emojis) spielt sich anders und lehrt dir neue Muster
-- 📈 **Strategischer Fortschritt** – Konzentriere dich zuerst auf Farben, um Formen (Level 10), dann Emojis (Level 20), dann Pro (Level 30) freizuschalten
+- 🎓 **Lerne jeden Modus** – Jeder Modus (Farben, Zahlen, Formen, Flaggen, Emojis) spielt sich anders und lehrt dir neue Muster
+- 📈 **Strategischer Fortschritt** – Konzentriere dich zuerst auf Farben, um Formen (Level 10), Flaggen (Level 15), dann Emojis (Level 20), dann Pro (Level 30) freizuschalten
 - 🔥 **Pro-Modus** ist deutlich schwerer, belohnt dich aber mit 50% mehr Punkten
 - ⏱️ **Jede Sekunde zählt** – je schneller du antwortest, desto höher dein Score!
 - 🎲 **Jedes Emoji-Spiel ist einzigartig** mit verschiedenen zufälligen Emojis für endlose Abwechslung
@@ -352,12 +376,15 @@ Schalte 18 spannende Errungenschaften frei, während du durch die Level voransch
 ### 🛠 Was du bekommst
 
 - 📱 **Universal-App**: Ein Download, funktioniert auf iPhone, iPad und Apple Watch
-- 🆓 **Komplett kostenlos**: Keine Werbung, keine In-App-Käufe, keine Abos
+- 🆓 **Komplett kostenlos spielbar**: Keine Werbung, keine Käufe die das Gameplay beeinflussen
+- ❤️ **Optionale Unterstützung**: Freiwilliges Trinkgeld verfügbar für die, die die Entwicklung unterstützen möchten (nur iOS)
 - 🔒 **Privatsphäre zuerst**: Keine Datenerfassung, kein Tracking, kein Internet nötig
 - 🎨 **Schönes Design**: Moderne SwiftUI-Oberfläche mit flüssigen Animationen
 - 🌍 **Vollständig lokalisiert**: Verfügbar in Deutsch und Englisch
 - ♿ **Barrierefrei**: Entwickelt für VoiceOver und Bedienungshilfen
 - 💾 **Dein Fortschritt, dein Gerät**: Alle Highscores und Einstellungen bleiben auf deinem Gerät
+
+**Hinweis zu In-App-Käufen**: Timekiller enthält optionale Spenden (Trinkgeld), die es Spielern ermöglichen, die Entwicklung freiwillig zu unterstützen. Diese sind rein freiwillig und haben keinen Einfluss auf Gameplay, Funktionen oder Fortschritt. Das Spiel ist und bleibt vollständig kostenlos spielbar.
 
 ### 📱 Anforderungen
 
@@ -379,10 +406,9 @@ Schalte 18 spannende Errungenschaften frei, während du durch die Level voransch
 
 Wir arbeiten ständig daran, Timekiller noch besser zu machen! Das steht auf dem Plan:
 
-- 🔢 **Zusätzliche Spielmodi** (Zahlen, Buchstaben und mehr)
 - ♾️ **Endlos-Modus** für Non-Stop-Action
-- 🌐 **Online-Bestenlisten** für globalen Wettbewerb
 - 👥 **Multiplayer**-Herausforderungen mit Freunden
+- 🌐 **Mehr Sprachunterstützung**
 
 Hast du einen Feature-Wunsch? Lass es uns auf GitHub wissen!
 

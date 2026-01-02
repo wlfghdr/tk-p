@@ -8,11 +8,15 @@
         :root {
             --primary-color: #007AFF;
             --success-color: #34C759;
+            --warning-color: #FF9500;
+            --danger-color: #FF3B30;
             --background-color: #F2F2F7;
             --card-background: #FFFFFF;
             --text-primary: #000000;
             --text-secondary: #8E8E93;
             --border-color: #C6C6C8;
+            --highlight-bg: rgba(0, 122, 255, 0.08);
+            --shadow-color: rgba(0, 0, 0, 0.08);
         }
         
         @media (prefers-color-scheme: dark) {
@@ -22,6 +26,8 @@
                 --text-primary: #FFFFFF;
                 --text-secondary: #8E8E93;
                 --border-color: #38383A;
+                --highlight-bg: rgba(0, 122, 255, 0.15);
+                --shadow-color: rgba(0, 0, 0, 0.3);
             }
         }
         
@@ -43,32 +49,58 @@
             max-width: 800px;
             margin: 0 auto;
             background-color: var(--card-background);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px var(--shadow-color);
         }
         
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 700;
             margin-bottom: 10px;
-            color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color), #5AC8FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         h2 {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 600;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary-color);
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--success-color);
         }
         
         h3 {
             font-size: 20px;
             font-weight: 600;
-            margin-top: 25px;
-            margin-bottom: 12px;
+            margin-top: 30px;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        h3::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-size: 24px;
+            line-height: 1;
         }
         
         p {
@@ -79,39 +111,48 @@
         .subtitle {
             font-size: 16px;
             color: var(--text-secondary);
-            margin-bottom: 30px;
+            margin-bottom: 35px;
+            padding: 15px;
+            background: var(--highlight-bg);
+            border-radius: 8px;
+            text-align: center;
         }
         
         .highlight {
-            background-color: rgba(0, 122, 255, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid var(--primary-color);
+            background: linear-gradient(135deg, var(--highlight-bg), rgba(90, 200, 250, 0.08));
+            padding: 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+            border-left: 5px solid var(--primary-color);
+            box-shadow: 0 2px 8px var(--shadow-color);
         }
         
         .highlight strong {
             color: var(--primary-color);
             font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
         }
         
         ul {
             list-style: none;
-            margin: 15px 0;
+            margin: 20px 0;
             padding-left: 0;
         }
         
         ul li {
-            padding: 8px 0;
-            padding-left: 30px;
+            padding: 10px 0;
+            padding-left: 35px;
             position: relative;
+            line-height: 1.5;
         }
         
         ul li::before {
             content: '✅';
             position: absolute;
             left: 0;
-            font-size: 18px;
+            font-size: 20px;
+            line-height: 1;
         }
         
         ul.negative li::before {
@@ -120,63 +161,123 @@
         
         ul.check li::before {
             content: '✓';
-            color: var(--success-color);
+            background: var(--success-color);
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 16px;
         }
         
         .divider {
-            height: 2px;
+            height: 1px;
             background: linear-gradient(to right, transparent, var(--border-color), transparent);
-            margin: 40px 0;
+            margin: 50px 0;
+            position: relative;
+        }
+        
+        .divider::before {
+            content: '◆';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--card-background);
+            padding: 0 15px;
+            color: var(--primary-color);
+            font-size: 12px;
         }
         
         a {
             color: var(--primary-color);
             text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
         }
         
         a:hover {
             text-decoration: underline;
+            opacity: 0.8;
         }
         
         .badge {
             display: inline-block;
-            padding: 5px 12px;
-            border-radius: 12px;
-            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
             font-weight: 600;
             margin: 5px;
-            background-color: rgba(0, 122, 255, 0.1);
+            background-color: var(--highlight-bg);
             color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            transition: all 0.2s ease;
+        }
+        
+        .badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow-color);
         }
         
         .footer {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
+            margin-top: 50px;
+            padding-top: 30px;
             border-top: 2px solid var(--border-color);
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 600;
+            color: var(--success-color);
         }
         
         .language-section {
-            margin-top: 50px;
+            margin-top: 60px;
         }
         
         .optional-tag {
-            background-color: rgba(255, 149, 0, 0.1);
-            color: #FF9500;
-            padding: 2px 8px;
-            border-radius: 4px;
+            background: linear-gradient(135deg, rgba(255, 149, 0, 0.2), rgba(255, 149, 0, 0.1));
+            color: var(--warning-color);
+            padding: 4px 12px;
+            border-radius: 6px;
             font-size: 12px;
-            font-weight: 600;
-            margin-left: 8px;
+            font-weight: 700;
+            margin-left: 10px;
+            border: 1px solid var(--warning-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .icon-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: var(--highlight-bg);
+            border-radius: 10px;
+            margin: 10px 0;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        
+        .icon-box:hover {
+            border-color: var(--primary-color);
+        }
+        
+        .icon-box .emoji {
+            font-size: 32px;
+        }
+        
+        .badge-container {
+            margin: 24px 0;
+            text-align: center;
         }
         
         @media (max-width: 600px) {
             .container {
-                padding: 20px;
+                padding: 25px;
+                border-radius: 12px;
             }
             
             h1 {
@@ -186,6 +287,15 @@
             h2 {
                 font-size: 22px;
             }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            .badge {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
         }
     </style>
 </head>
@@ -193,7 +303,7 @@
     <div class="container">
         <h1>Privacy Policy / Datenschutzerklärung</h1>
         <p class="subtitle"><strong>Timekiller</strong> - Fast-Paced Puzzle Game<br>
-        Last Updated / Letzte Aktualisierung: December 29, 2024</p>
+        Last Updated / Letzte Aktualisierung: January 2, 2025</p>
         
         <!-- ENGLISH VERSION -->
         <h2>English Version</h2>
@@ -442,7 +552,7 @@
         
         <h3>Compliance</h3>
         <p>This app complies with:</p>
-        <div style="margin: 20px 0;">
+        <div class="badge-container">
             <span class="badge">🇪🇺 GDPR</span>
             <span class="badge">🇺🇸 COPPA</span>
             <span class="badge">🇺🇸 CCPA</span>
@@ -450,7 +560,7 @@
         </div>
         
         <div class="footer">
-            Privacy is a fundamental right. Timekiller respects that. 🔒
+            🔒 Privacy is a fundamental right. Timekiller respects that. 🔒
         </div>
     </div>
 </body>
