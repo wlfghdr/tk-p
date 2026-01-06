@@ -57,11 +57,11 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
 ### ✨ Features
 
 - 🎨 **Five Addictive Game Modes**
-  - **Colors**: Match color names with backgrounds (8 colors / 16 in Pro mode)
+  - **Colors**: Match color names with backgrounds (10 colors / 16 in Pro mode)
   - **Numbers**: Match numbers with their written words (0-12 / 0-99 in Pro mode) – Perfect for all ages!
-  - **Shapes**: Match shape names with symbols (10 shapes / 21 in Pro mode)
-  - **Flags**: Match country names with flag emojis (18 flags / 45 in Pro mode) – Geography challenge!
-  - **Emojis**: Match emoji names with icons (16 emojis / 64 in Pro mode!)
+  - **Shapes**: Match shape names with symbols (12 shapes / 21 in Pro mode)
+  - **Flags**: Match country names with flag emojis (20 flags / 60 in Pro mode) – Geography challenge!
+  - **Emojis**: Match emoji names with icons (20 emojis / 100 in Pro mode!)
   
 - 📊 **Progressive Grid Sizes**
   - **2×2 Grid**: Levels 1-4 (4 tiles, 8s starting time)
