@@ -89,7 +89,7 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
 
 For the complete experience — gameplay videos, all features, detailed achievements, tips & strategies, and the full German version:
 
-### **👉 [wlfghdr.github.io/tk-p/marketing.html](https://wlfghdr.github.io/tk-p/marketing.html)**
+### **👉 [wlfghdr.github.io/tk-p/](https://wlfghdr.github.io/tk-p/)**
 
 ---
 
