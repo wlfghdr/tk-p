@@ -36,13 +36,11 @@ https://wlfghdr.github.io/tk-p/Assets/promo.mp4
 
 #### iPhone
 <img src="Assets/iphone_start.png" width="200" alt="Start Screen">
-<img src="Assets/iphone_play.png" width="200" alt="Colors Mode">
-<img src="Assets/iphone_play2.png" width="200" alt="Pro Mode">
-<img src="Assets/iphone_play3.png" width="200" alt="Gameplay">
+<img src="Assets/iphone_capitals.png" width="200" alt="Capitals Mode">
+<img src="Assets/iphone_colors.png" width="200" alt="Colors Mode">
 
-<img src="Assets/iphone_play4.png" width="200" alt="Numbers Mode">
-<img src="Assets/iphone_play5.png" width="200" alt="Shapes Mode">
-<img src="Assets/iphone_play6.png" width="200" alt="Flags Mode">
+<img src="Assets/iphone_flags.png" width="200" alt="Flags Mode">
+<img src="Assets/iphone_emojis.png" width="200" alt="Emojis Mode">
 
 #### iPad
 <img src="Assets/ipad_start.png" width="300" alt="iPad Start">
