@@ -44,8 +44,8 @@ https://wlfghdr.github.io/tk-p/Assets/promo.mp4
 
 #### iPad
 <img src="Assets/ipad_start.png" width="300" alt="iPad Start">
-<img src="Assets/ipad_play.png" width="300" alt="iPad Gameplay">
-<img src="Assets/ipad_play2.png" width="300" alt="iPad Pro Mode">
+<img src="Assets/ipad_capitals.png" width="300" alt="Capitals Mode on iPad">
+<img src="Assets/ipad_flags.png" width="300" alt="Flags Mode on iPad">
 
 #### Apple Watch
 <img src="Assets/watch_start.png" width="180" alt="Watch Start">
