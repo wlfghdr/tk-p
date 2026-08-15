@@ -71,12 +71,13 @@ Perfect for quick gaming sessions, brain training, or competitive play with frie
 
 ## ✨ Features
 
-- 🎨 **5 Game Modes** — Colors, Numbers, Shapes, Flags, Emojis
+- 🎨 **6 Game Modes** — Colors, Numbers, Shapes, Flags, Emojis, Capitals
 - 🔄 **Inverse Mode** — Find the odd one out instead of the match
 - 🔥 **Pro Mode** — Expanded content pools + 50% more points
 - 📊 **Progressive Difficulty** — Grids grow from 2×2 to 3×5, time shrinks from level 25+
-- 🏆 **23 Achievements** — Including the hidden Bug Hunter 🐛
+- 🏆 **26 Achievements** — Including the hidden Bug Hunter 🐛
 - 📋 **Game Over Feedback** — See which tiles were the correct answers
+- 🗓️ **Weekly Leaderboard** — Resets every Monday, so the top is always in reach
 - 🌐 **Game Center** — Global leaderboards & achievements (iOS)
 - 👥 **Multiple Profiles** — Everyone gets their own progress
 - ⌚ **Apple Watch** — Full game on your wrist
