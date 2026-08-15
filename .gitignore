@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+**/.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+*.swp
+*~
+.idea/
+.vscode/
+
+# Archives — this is the public marketing site, app source belongs in the app repo
+*.zip
